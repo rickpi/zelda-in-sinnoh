@@ -32,9 +32,18 @@ module.exports = {
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader'
         ]
-      }
+      }, {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              esModule: false,
+            }
+          },
+        ],
+      },
     ]
   },
   devServer: {
@@ -45,6 +54,6 @@ module.exports = {
   },
   plugins: [
     htmlWebpackPlugin,
-    miniCssExtractPlugin
+    miniCssExtractPlugin,
   ]
 }

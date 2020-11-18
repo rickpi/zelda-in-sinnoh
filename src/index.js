@@ -6,6 +6,8 @@ import store from './store';
 
 import Routes from './components/routes';
 
+import './assets/css/index.css';
+
 ReactDOM.render(
   <Provider store={store}>
     <Routes />
