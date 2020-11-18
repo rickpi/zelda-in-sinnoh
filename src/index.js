@@ -4,13 +4,13 @@ import { Provider } from 'react-redux';
 
 import store from './store';
 
-import Routes from './components/routes';
+import Game from './components/game';
 
 import './assets/css/index.css';
 
 ReactDOM.render(
   <Provider store={store}>
-    <Routes />
+    <Game />
   </Provider>,
   document.getElementById('app'),
 );
