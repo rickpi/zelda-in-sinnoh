@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
 
 // import tasks from './components/home/tasks/reducer';
-// import form from './components/home/form/reducer';
+import board from './components/game/board/reducer';
 
 export default combineReducers({
+  board,
 });

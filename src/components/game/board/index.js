@@ -1,9 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const Board = () => (
+import Tilesets from './tilesets';
+
+const Board = ({ levels }) => (
   <div className="board">
-    board
+    <Tilesets matrix={levels[0].matrix} />
   </div>
 );
 
-export default Board;
+const mapToProps = (state) => ({
+  levels: state.board.levels,
+  currentLevel: state.board.currentLevel,
+});
+
+export default connect(mapToProps)(Board);
