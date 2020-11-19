@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import Tilesets from './tilesets';
+import Tileset from './tileset';
 
 const Board = ({ levels }) => (
   <div className="board">
-    <Tilesets matrix={levels[0].matrix} />
+    <Tileset matrix={levels[0].matrix} />
   </div>
 );
 
