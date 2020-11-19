@@ -1,111 +1,111 @@
 .tiplouf-front-0 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
+  width: 64px;
+  height: 64px;
+  left: -12px;
   background: url('../sprites/main/tiplouf.png') 0 0 no-repeat;
 } 
 
 .tiplouf-front-1 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -50px 0 no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -64px 0 no-repeat;
 }
 
 .tiplouf-front-2 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -100px 0 no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -128px 0 no-repeat;
 }
 
 .tiplouf-front-3 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -150px 0 no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -192px 0 no-repeat;
 }
 
 .tiplouf-left-0 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') 0 -50px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') 0 -64px no-repeat;
 } 
 
 .tiplouf-left-1 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -50px -50px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -64px -64px no-repeat;
 }
 
 .tiplouf-left-2 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -100px -50px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -128px -64px no-repeat;
 }
 
 .tiplouf-left-3 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -150px -50px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -192px -64px no-repeat;
 }
 
 .tiplouf-right-0 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') 0 -100px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') 0 -128px no-repeat;
 } 
 
 .tiplouf-right-1 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -50px -100px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -64px -128px no-repeat;
 }
 
 .tiplouf-right-2 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -100px -100px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -128px -128px no-repeat;
 }
 
 .tiplouf-right-3 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -150px -100px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -192px -128px no-repeat;
 }
 
 .tiplouf-back-0 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') 0 -150px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') 0 -192px no-repeat;
 } 
 
 .tiplouf-back-1 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -50px -150px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -64px -192px no-repeat;
 }
 
 .tiplouf-back-2 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -100px -150px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -128px -192px no-repeat;
 }
 
 .tiplouf-back-3 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -150px -150px no-repeat;
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../sprites/main/tiplouf.png') -192px -192px no-repeat;
 }

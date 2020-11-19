@@ -66,31 +66,31 @@
 }
 
 .tree {
-  width: 56px;
-  height: 65px;
-  left: -8px;
+  width: 80px;
+  height: 92px;
+  left: -20px;
   background: url('../sprites/tree.png') 0 0 no-repeat;
 }
 
 .tree-close-right {
-  width: 56px;
-  height: 65px;
-  left: -8px;
-  background: url('../sprites/tree.png') -56px 0 no-repeat;
+  width: 80px;
+  height: 92px;
+  left: -20px;
+  background: url('../sprites/tree.png') -80px 0 no-repeat;
 }
 
 .tree-close-left {
-  width: 56px;
-  height: 65px;
-  left: -8px;
-  background: url('../sprites/tree.png') -112px 0 no-repeat;
+  width: 80px;
+  height: 92px;
+  left: -20px;
+  background: url('../sprites/tree.png') -160px 0 no-repeat;
 }
 
 .tree-close-both-sides {
-  width: 56px;
-  height: 65px;
-  left: -8px;
-  background: url('../sprites/tree.png') -168px 0 no-repeat;
+  width: 80px;
+  height: 92px;
+  left: -20px;
+  background: url('../sprites/tree.png') -240px 0 no-repeat;
 }
 
 .rock {

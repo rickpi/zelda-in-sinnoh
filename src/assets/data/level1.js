@@ -124,7 +124,9 @@ const level1 = [
       walkOn: true,
     },
     {
-      content: [],
+      content: [
+        'character-tiplouf',
+      ],
       walkOn: true,
     },
     {
@@ -230,7 +232,6 @@ const level1 = [
   [
     {
       content: [
-        'border-tree-9',
       ],
       walkOn: false,
     },
@@ -284,74 +285,6 @@ const level1 = [
     },
     {
       content: [],
-      walkOn: true,
-    },
-    {
-      content: [
-        'border-tree-10',
-      ],
-      walkOn: false,
-    },
-  ],
-  [
-    {
-      content: [
-        'border-tree-9',
-      ],
-      walkOn: false,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [
-      ],
-      walkOn: true,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [
-      ],
       walkOn: true,
     },
     {
@@ -363,7 +296,72 @@ const level1 = [
   [
     {
       content: [
-        'border-tree-9',
+      ],
+      walkOn: false,
+    },
+    {
+      content: [],
+      walkOn: true,
+    },
+    {
+      content: [],
+      walkOn: true,
+    },
+    {
+      content: [],
+      walkOn: true,
+    },
+    {
+      content: [
+      ],
+      walkOn: true,
+    },
+    {
+      content: [],
+      walkOn: true,
+    },
+    {
+      content: [],
+      walkOn: true,
+    },
+    {
+      content: [],
+      walkOn: true,
+    },
+    {
+      content: [],
+      walkOn: true,
+    },
+    {
+      content: [],
+      walkOn: true,
+    },
+    {
+      content: [],
+      walkOn: true,
+    },
+    {
+      content: [],
+      walkOn: true,
+    },
+    {
+      content: [],
+      walkOn: true,
+    },
+    {
+      content: [
+      ],
+      walkOn: true,
+    },
+    {
+      content: [
+      ],
+      walkOn: false,
+    },
+  ],
+  [
+    {
+      content: [
       ],
       walkOn: false,
     },
@@ -391,7 +389,7 @@ const level1 = [
     },
     {
       content: [
-        'house',
+        // 'house',
       ],
       walkOn: true,
     },
@@ -443,55 +441,46 @@ const level1 = [
     },
     {
       content: [
-        'character-tiplouf',
       ],
       walkOn: true,
     },
     {
       content: [
-        'character-prinplouf',
       ],
       walkOn: true,
     },
     {
       content: [
-        'character-pingoleon',
       ],
       walkOn: true,
     },
     {
       content: [
-        'character-ouisticram',
       ],
       walkOn: true,
     },
     {
       content: [
-        'character-chimpenfeu',
       ],
       walkOn: true,
     },
     {
       content: [
-        'character-simiabraz',
       ],
       walkOn: true,
     },
     {
       content: [
-        'character-tortipouss',
       ],
       walkOn: true,
     },
     {
       content: [
-        'character-boskara',
       ],
       walkOn: true,
     },
     {
       content: [
-        'character-torterra',
       ],
       walkOn: true,
     },
