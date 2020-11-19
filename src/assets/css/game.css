@@ -62,8 +62,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 40px;
-  height: 40px;
   z-index: 20;
 }
 
@@ -103,54 +101,80 @@
 }
 
 .water {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -160px 0 no-repeat;
 }
 
 .water-top-left {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') 0 0 no-repeat;
 }
 
 .water-top {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -40px 0 no-repeat;
 }
 
 .water-top-right {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -80px 0 no-repeat;
 }
 
 .water-left {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -120px 0 no-repeat;
 }
 
 .water-right {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -200px 0 no-repeat;
 }
 
 .water-bottom-left {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -240px 0 no-repeat;
 }
 
 .water-bottom {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -280px 0 no-repeat;
 }
 
 .water-bottom-right {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -320px 0 no-repeat;
 }
 
 .water-corner-top-left {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -360px 0 no-repeat;
 }
 
 .water-corner-top-right {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -400px 0 no-repeat;
 }
 
 .water-corner-bottom-left {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -440px 0 no-repeat;
 }
 
 .water-corner-bottom-right {
+  width: 40px;
+  height: 40px;
   background: url('../sprites/water.png') -480px 0 no-repeat;
 }
 
@@ -172,119 +196,7 @@
   background: url('../sprites/house.png') 0 0 no-repeat;
   left: -28px;
 }
-
-.tiplouf-front-0 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') 0 0 no-repeat;
-} 
-
-.tiplouf-front-1 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -50px 0 no-repeat;
-}
-
-.tiplouf-front-2 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -100px 0 no-repeat;
-}
-
-.tiplouf-front-3 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -150px 0 no-repeat;
-}
-
-.tiplouf-left-0 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') 0 -50px no-repeat;
-} 
-
-.tiplouf-left-1 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -50px -50px no-repeat;
-}
-
-.tiplouf-left-2 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -100px -50px no-repeat;
-}
-
-.tiplouf-left-3 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -150px -50px no-repeat;
-}
-
-.tiplouf-right-0 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') 0 -100px no-repeat;
-} 
-
-.tiplouf-right-1 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -50px -100px no-repeat;
-}
-
-.tiplouf-right-2 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -100px -100px no-repeat;
-}
-
-.tiplouf-right-3 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -150px -100px no-repeat;
-}
-
-.tiplouf-back-0 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') 0 -150px no-repeat;
-} 
-
-.tiplouf-back-1 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -50px -150px no-repeat;
-}
-
-.tiplouf-back-2 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -100px -150px no-repeat;
-}
-
-.tiplouf-back-3 {
-  width: 50px;
-  height: 50px;
-  left: -5px;
-  background: url('../sprites/main/tiplouf.png') -150px -150px no-repeat;
-}
-
+/* 
 .pingoleon-front-0 {
   width: 50px;
   height: 50px;
@@ -395,4 +307,4 @@
   height: 50px;
   left: -5px;
   background: url('../sprites/main/pingoleon.png') -150px -150px no-repeat;
-}
+} */

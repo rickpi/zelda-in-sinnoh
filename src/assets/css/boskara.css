@@ -1,0 +1,112 @@
+
+.boskara-front-0 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') 0 0 no-repeat;
+} 
+
+.boskara-front-1 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -50px 0 no-repeat;
+}
+
+.boskara-front-2 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -100px 0 no-repeat;
+}
+
+.boskara-front-3 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -150px 0 no-repeat;
+}
+
+.boskara-left-0 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') 0 -50px no-repeat;
+} 
+
+.boskara-left-1 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -50px -50px no-repeat;
+}
+
+.boskara-left-2 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -100px -50px no-repeat;
+}
+
+.boskara-left-3 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -150px -50px no-repeat;
+}
+
+.boskara-right-0 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') 0 -100px no-repeat;
+} 
+
+.boskara-right-1 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -50px -100px no-repeat;
+}
+
+.boskara-right-2 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -100px -100px no-repeat;
+}
+
+.boskara-right-3 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -150px -100px no-repeat;
+}
+
+.boskara-back-0 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') 0 -150px no-repeat;
+} 
+
+.boskara-back-1 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -50px -150px no-repeat;
+}
+
+.boskara-back-2 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -100px -150px no-repeat;
+}
+
+.boskara-back-3 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/boskara.png') -150px -150px no-repeat;
+}

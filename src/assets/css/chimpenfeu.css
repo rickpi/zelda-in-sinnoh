@@ -1,0 +1,112 @@
+
+.chimpenfeu-front-0 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') 0 0 no-repeat;
+} 
+
+.chimpenfeu-front-1 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -50px 0 no-repeat;
+}
+
+.chimpenfeu-front-2 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -100px 0 no-repeat;
+}
+
+.chimpenfeu-front-3 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -150px 0 no-repeat;
+}
+
+.chimpenfeu-left-0 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') 0 -50px no-repeat;
+} 
+
+.chimpenfeu-left-1 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -50px -50px no-repeat;
+}
+
+.chimpenfeu-left-2 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -100px -50px no-repeat;
+}
+
+.chimpenfeu-left-3 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -150px -50px no-repeat;
+}
+
+.chimpenfeu-right-0 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') 0 -100px no-repeat;
+} 
+
+.chimpenfeu-right-1 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -50px -100px no-repeat;
+}
+
+.chimpenfeu-right-2 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -100px -100px no-repeat;
+}
+
+.chimpenfeu-right-3 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -150px -100px no-repeat;
+}
+
+.chimpenfeu-back-0 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') 0 -150px no-repeat;
+} 
+
+.chimpenfeu-back-1 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -50px -150px no-repeat;
+}
+
+.chimpenfeu-back-2 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -100px -150px no-repeat;
+}
+
+.chimpenfeu-back-3 {
+  width: 50px;
+  height: 50px;
+  left: -5px;
+  background: url('../sprites/main/chimpenfeu.png') -150px -150px no-repeat;
+}
