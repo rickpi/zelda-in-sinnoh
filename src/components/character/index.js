@@ -1,10 +1,21 @@
 import React from 'react';
 
+import '../../assets/css/tiplouf.css';
+import '../../assets/css/prinplouf.css';
+import '../../assets/css/pingoleon.css';
+import '../../assets/css/ouisticram.css';
+import '../../assets/css/chimpenfeu.css';
+import '../../assets/css/simiabraz.css';
+import '../../assets/css/tortipouss.css';
+import '../../assets/css/boskara.css';
+import '../../assets/css/torterra.css';
+
 class Character extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    const { name } = this.props;
     this.state = {
-      name: 'pingoleon',
+      name,
       orientation: 'front',
       frame: 0,
       ready: false,

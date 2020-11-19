@@ -4,7 +4,11 @@ import Character from '../../../character';
 const Tile = ({ content }) => (
   <div className="tile tile--level-1">
     {content.map((item) => {
-      if (item === 'tiplouf') return <Character />;
+      if (item.indexOf('character') !== -1) {
+        const name = item.split('-');
+
+        return <Character name={name[1]} />;
+      }
       return <div className={`tile__content ${item}`} />;
     })}
   </div>

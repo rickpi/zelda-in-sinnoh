@@ -442,41 +442,57 @@ const level1 = [
       walkOn: true,
     },
     {
-      content: [],
-      walkOn: true,
-    },
-    {
-      content: [],
-      walkOn: true,
-    },
-    {
       content: [
-        'tiplouf',
+        'character-tiplouf',
       ],
       walkOn: true,
     },
     {
-      content: [],
+      content: [
+        'character-prinplouf',
+      ],
       walkOn: true,
     },
     {
-      content: [],
+      content: [
+        'character-pingoleon',
+      ],
       walkOn: true,
     },
     {
-      content: [],
+      content: [
+        'character-ouisticram',
+      ],
       walkOn: true,
     },
     {
-      content: [],
+      content: [
+        'character-chimpenfeu',
+      ],
       walkOn: true,
     },
     {
-      content: [],
+      content: [
+        'character-simiabraz',
+      ],
       walkOn: true,
     },
     {
-      content: [],
+      content: [
+        'character-tortipouss',
+      ],
+      walkOn: true,
+    },
+    {
+      content: [
+        'character-boskara',
+      ],
+      walkOn: true,
+    },
+    {
+      content: [
+        'character-torterra',
+      ],
       walkOn: true,
     },
     {
