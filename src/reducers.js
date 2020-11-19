@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
 
-// import tasks from './components/home/tasks/reducer';
 import board from './components/game/board/reducer';
+import mainCharacter from './components/character/main-character/reducer';
 
 export default combineReducers({
   board,
+  mainCharacter,
 });
