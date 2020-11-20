@@ -10,6 +10,7 @@ import '../../../assets/css/simiabraz.css';
 import '../../../assets/css/tortipouss.css';
 import '../../../assets/css/boskara.css';
 import '../../../assets/css/torterra.css';
+import '../../../assets/css/crehelf.css';
 
 import store from '../../../store';
 import * as actions from './actions';
@@ -122,7 +123,7 @@ class MainCharacter extends React.Component {
       `${character.name}-${character.orientation}-${character.frame}`,
     ];
 
-    if (character.name === '') store.dispatch(actions.changeName('pingoleon'));
+    if (character.name === '') store.dispatch(actions.changeName('crehelf'));
 
     if (character.movingDirection !== '') classNames.push([`moving-${character.movingDirection}`]);
 
