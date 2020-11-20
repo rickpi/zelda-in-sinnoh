@@ -54,14 +54,14 @@
   /* border: 1px solid #fff; */
 }
 
-.tile--level-1 {
+.grass {
   background: url('../sprites/base-ground.png') 0 0 no-repeat;
 }
 
 .tile__content {
   position: absolute;
   bottom: 0;
-  left: 0;
+  /* left: 0; */
   z-index: 20;
 }
 
