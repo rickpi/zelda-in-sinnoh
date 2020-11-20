@@ -4,10 +4,10 @@ import level1 from '../../../assets/data/level1';
 
 const initialState = {
   levels: [{
-    id: '1',
-    matrix: level1,
+    ...level1,
   }],
-  currentLevel: '1',
+  currentLevel: 0,
+  currentTab: 0,
 };
 
 const board = (state = initialState, action) => {

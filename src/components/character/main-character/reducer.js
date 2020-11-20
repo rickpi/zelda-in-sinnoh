@@ -5,68 +5,57 @@ const initialState = {
   frame: 0,
   orientation: 'front',
   isMoving: false,
-  posX: 5,
-  posY: 5,
+  posX: 7,
+  posY: 6,
 };
 
-const changeName = (state, action) => {
-  const newState = { ...state };
+const changeName = (state, action) => ({
+  ...state,
+  name: action.name,
+});
 
-  newState.name = action.name;
-  return newState;
-};
+const moveUp = (state) => ({
+  ...state,
+  orientation: 'back',
+});
 
-const moveUp = (state) => {
-  const newState = { ...state };
+const moveDown = (state) => ({
+  ...state,
+  orientation: 'front',
+});
 
-  newState.orientation = 'back';
-  return newState;
-};
+const moveLeft = (state) => ({
+  ...state,
+  orientation: 'left',
+});
 
-const moveDown = (state) => {
-  const newState = { ...state };
-
-  newState.orientation = 'front';
-  return newState;
-};
-
-const moveLeft = (state) => {
-  const newState = { ...state };
-
-  newState.orientation = 'left';
-  return newState;
-};
-
-const moveRight = (state) => {
-  const newState = { ...state };
-
-  newState.orientation = 'right';
-  return newState;
-};
+const moveRight = (state) => ({
+  ...state,
+  orientation: 'right',
+});
 
 const nextFrame = (state) => {
   const { frame } = state;
-  const newState = { ...state };
 
-  newState.frame = frame >= 3 ? 0 : frame + 1;
-  return newState;
+  return {
+    ...state,
+    frame: frame >= 3 ? 0 : frame + 1,
+  };
 };
 
-const updatePos = (state, action) => {
-  const { posX, posY } = action;
-  const newState = { ...state };
-
-  newState.posX = posX;
-  newState.posY = posY;
-  return newState;
-};
+const updatePos = (state, action) => ({
+  ...state,
+  posX: action.posX,
+  posY: action.posY,
+});
 
 const moving = (state) => {
   const { isMoving } = state;
-  const newState = { ...state };
 
-  newState.isMoving = !isMoving;
-  return newState;
+  return {
+    ...state,
+    isMoving: !isMoving,
+  };
 };
 
 const mainCharacter = (state = initialState, action) => {
