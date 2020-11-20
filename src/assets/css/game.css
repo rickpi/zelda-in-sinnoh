@@ -62,11 +62,10 @@
   position: absolute;
   bottom: 0;
   z-index: 20;
-  /* transition: transform 500ms linear; */
 }
 
 .moving-up {
-  animation: movingUp 500ms linear forwards;
+  animation: movingUp 400ms linear forwards;
 }
 
 @keyframes movingUp {
@@ -79,7 +78,7 @@
 }
 
 .moving-down {
-  animation: movingDown 500ms linear forwards;
+  animation: movingDown 400ms linear forwards;
 }
 
 @keyframes movingDown {
@@ -91,7 +90,7 @@
   }
 }
 .moving-left {
-  animation: movingLeft 500ms linear forwards;
+  animation: movingLeft 400ms linear forwards;
 }
 
 @keyframes movingLeft {
@@ -103,7 +102,7 @@
   }
 }
 .moving-right {
-  animation: movingRight 500ms linear forwards;
+  animation: movingRight 400ms linear forwards;
 }
 
 @keyframes movingRight {

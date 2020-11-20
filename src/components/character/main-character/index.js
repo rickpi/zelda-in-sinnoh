@@ -24,16 +24,38 @@ class MainCharacter extends React.Component {
     this.handleArrowDown = this.handleArrowDown.bind(this);
     this.handleArrowLeft = this.handleArrowLeft.bind(this);
     this.handleArrowRight = this.handleArrowRight.bind(this);
+    this.canGoHere = this.canGoHere.bind(this);
     this.interval = null;
   }
 
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeyDown);
-    this.interval = setInterval(() => store.dispatch(actions.nextFrame()), 250);
+    this.interval = setInterval(() => store.dispatch(actions.nextFrame()), 150);
   }
 
   componentWillUnmount() {
     clearInterval(this.interval);
+  }
+
+  handleKeyDown(event) {
+    const { key } = event;
+
+    switch (key) {
+      case 'ArrowUp':
+        this.handleArrowUp();
+        break;
+      case 'ArrowDown':
+        this.handleArrowDown();
+        break;
+      case 'ArrowLeft':
+        this.handleArrowLeft();
+        break;
+      case 'ArrowRight':
+        this.handleArrowRight();
+        break;
+      default:
+        break;
+    }
   }
 
   handleMoving(posX, posY, movingAction) {
@@ -45,14 +67,16 @@ class MainCharacter extends React.Component {
       store.dispatch(actions.removeMovingDirection());
       store.dispatch(tilesActions.addMainCharacter(posX, posY));
       store.dispatch(actions.moving());
-    }, 500);
+    }, 400);
   }
 
   handleArrowUp() {
     const { character } = this.props;
 
-    if (!character.isMoving) {
-      this.handleMoving(character.posX, character.posY - 1, actions.moveUp);
+    if (this.canGoHere(character.posX, character.posY - 1)) {
+      if (!character.isMoving) {
+        this.handleMoving(character.posX, character.posY - 1, actions.moveUp);
+      }
     }
   }
 
@@ -80,25 +104,9 @@ class MainCharacter extends React.Component {
     }
   }
 
-  handleKeyDown(event) {
-    const { key } = event;
-
-    switch (key) {
-      case 'ArrowUp':
-        this.handleArrowUp();
-        break;
-      case 'ArrowDown':
-        this.handleArrowDown();
-        break;
-      case 'ArrowLeft':
-        this.handleArrowLeft();
-        break;
-      case 'ArrowRight':
-        this.handleArrowRight();
-        break;
-      default:
-        break;
-    }
+  canGoHere(posX, posY) {
+    const { tiles } = this.props;
+    return tiles[posY * 15 + posX].walkedOn;
   }
 
   render() {
@@ -108,7 +116,7 @@ class MainCharacter extends React.Component {
       `${character.name}-${character.orientation}-${character.frame}`,
     ];
 
-    if (character.name === '') store.dispatch(actions.changeName('torterra'));
+    if (character.name === '') store.dispatch(actions.changeName('pingoleon'));
 
     if (character.movingDirection !== '') classNames.push([`moving-${character.movingDirection}`]);
 
@@ -122,6 +130,7 @@ class MainCharacter extends React.Component {
 
 const mapToProps = (state) => ({
   character: state.mainCharacter,
+  tiles: state.tiles,
 });
 
 export default connect(mapToProps)(MainCharacter);
