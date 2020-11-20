@@ -83,24 +83,30 @@ class MainCharacter extends React.Component {
   handleArrowDown() {
     const { character } = this.props;
 
-    if (!character.isMoving) {
-      this.handleMoving(character.posX, character.posY + 1, actions.moveDown);
+    if (this.canGoHere(character.posX, character.posY + 1)) {
+      if (!character.isMoving) {
+        this.handleMoving(character.posX, character.posY + 1, actions.moveDown);
+      }
     }
   }
 
   handleArrowLeft() {
     const { character } = this.props;
 
-    if (!character.isMoving) {
-      this.handleMoving(character.posX - 1, character.posY, actions.moveLeft);
+    if (this.canGoHere(character.posX - 1, character.posY)) {
+      if (!character.isMoving) {
+        this.handleMoving(character.posX - 1, character.posY, actions.moveLeft);
+      }
     }
   }
 
   handleArrowRight() {
     const { character } = this.props;
 
-    if (!character.isMoving) {
-      this.handleMoving(character.posX + 1, character.posY, actions.moveRight);
+    if (this.canGoHere(character.posX + 1, character.posY)) {
+      if (!character.isMoving) {
+        this.handleMoving(character.posX + 1, character.posY, actions.moveRight);
+      }
     }
   }
 
