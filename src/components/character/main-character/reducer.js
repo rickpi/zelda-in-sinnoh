@@ -4,9 +4,10 @@ const initialState = {
   name: '',
   frame: 0,
   orientation: 'front',
+  posX: 5,
+  posY: 5,
   isMoving: false,
-  posX: 7,
-  posY: 6,
+  movingDirection: '',
 };
 
 const changeName = (state, action) => ({
@@ -14,25 +15,45 @@ const changeName = (state, action) => ({
   name: action.name,
 });
 
-const moveUp = (state) => ({
-  ...state,
-  orientation: 'back',
-});
+const moveUp = (state) => {
+  const { posY } = state;
+  return ({
+    ...state,
+    orientation: 'back',
+    movingDirection: 'up',
+    posY: posY - 1,
+  });
+};
 
-const moveDown = (state) => ({
-  ...state,
-  orientation: 'front',
-});
+const moveDown = (state) => {
+  const { posY } = state;
+  return ({
+    ...state,
+    orientation: 'front',
+    movingDirection: 'down',
+    posY: posY + 1,
+  });
+};
 
-const moveLeft = (state) => ({
-  ...state,
-  orientation: 'left',
-});
+const moveLeft = (state) => {
+  const { posX } = state;
+  return ({
+    ...state,
+    orientation: 'left',
+    movingDirection: 'left',
+    posX: posX - 1,
+  });
+};
 
-const moveRight = (state) => ({
-  ...state,
-  orientation: 'right',
-});
+const moveRight = (state) => {
+  const { posX } = state;
+  return {
+    ...state,
+    orientation: 'right',
+    movingDirection: 'right',
+    posX: posX + 1,
+  };
+};
 
 const nextFrame = (state) => {
   const { frame } = state;
@@ -51,12 +72,16 @@ const updatePos = (state, action) => ({
 
 const moving = (state) => {
   const { isMoving } = state;
-
-  return {
+  return ({
     ...state,
     isMoving: !isMoving,
-  };
+  });
 };
+
+const removeMovingDirection = (state) => ({
+  ...state,
+  movingDirection: '',
+});
 
 const mainCharacter = (state = initialState, action) => {
   switch (action.type) {
@@ -76,6 +101,8 @@ const mainCharacter = (state = initialState, action) => {
       return updatePos(state, action);
     case actionsType.MOVING:
       return moving(state);
+    case actionsType.REMOVE_MOVING_DIRECTION:
+      return removeMovingDirection(state);
     default:
       return state;
   }

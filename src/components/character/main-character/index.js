@@ -13,16 +13,71 @@ import '../../../assets/css/torterra.css';
 
 import store from '../../../store';
 import * as actions from './actions';
+import * as tilesActions from '../../game/board/tiles/actions';
 
 class MainCharacter extends React.Component {
   constructor(props) {
     super(props);
     this.handleKeyDown = this.handleKeyDown.bind(this);
+    this.handleMoving = this.handleMoving.bind(this);
+    this.handleArrowUp = this.handleArrowUp.bind(this);
+    this.handleArrowDown = this.handleArrowDown.bind(this);
+    this.handleArrowLeft = this.handleArrowLeft.bind(this);
+    this.handleArrowRight = this.handleArrowRight.bind(this);
+    this.interval = null;
   }
 
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeyDown);
-    setInterval(() => store.dispatch(actions.nextFrame()), 250);
+    this.interval = setInterval(() => store.dispatch(actions.nextFrame()), 250);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  handleMoving(posX, posY, movingAction) {
+    store.dispatch(actions.moving());
+    store.dispatch(movingAction());
+
+    setTimeout(() => {
+      store.dispatch(tilesActions.removeMainCharacter());
+      store.dispatch(actions.removeMovingDirection());
+      store.dispatch(tilesActions.addMainCharacter(posX, posY));
+      store.dispatch(actions.moving());
+    }, 500);
+  }
+
+  handleArrowUp() {
+    const { character } = this.props;
+
+    if (!character.isMoving) {
+      this.handleMoving(character.posX, character.posY - 1, actions.moveUp);
+    }
+  }
+
+  handleArrowDown() {
+    const { character } = this.props;
+
+    if (!character.isMoving) {
+      this.handleMoving(character.posX, character.posY + 1, actions.moveDown);
+    }
+  }
+
+  handleArrowLeft() {
+    const { character } = this.props;
+
+    if (!character.isMoving) {
+      this.handleMoving(character.posX - 1, character.posY, actions.moveLeft);
+    }
+  }
+
+  handleArrowRight() {
+    const { character } = this.props;
+
+    if (!character.isMoving) {
+      this.handleMoving(character.posX + 1, character.posY, actions.moveRight);
+    }
   }
 
   handleKeyDown(event) {
@@ -30,16 +85,16 @@ class MainCharacter extends React.Component {
 
     switch (key) {
       case 'ArrowUp':
-        store.dispatch(actions.moveUp());
+        this.handleArrowUp();
         break;
       case 'ArrowDown':
-        store.dispatch(actions.moveDown());
+        this.handleArrowDown();
         break;
       case 'ArrowLeft':
-        store.dispatch(actions.moveLeft());
+        this.handleArrowLeft();
         break;
       case 'ArrowRight':
-        store.dispatch(actions.moveRight());
+        this.handleArrowRight();
         break;
       default:
         break;
@@ -53,7 +108,9 @@ class MainCharacter extends React.Component {
       `${character.name}-${character.orientation}-${character.frame}`,
     ];
 
-    if (character.name === '') store.dispatch(actions.changeName('simiabraz'));
+    if (character.name === '') store.dispatch(actions.changeName('torterra'));
+
+    if (character.movingDirection !== '') classNames.push([`moving-${character.movingDirection}`]);
 
     return (
       <div

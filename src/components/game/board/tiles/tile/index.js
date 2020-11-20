@@ -12,8 +12,6 @@ const Tile = ({ base, content }) => (
 const mapToProps = (state, ownProps) => ({
   base: state.tiles[ownProps.index].base,
   content: state.tiles[ownProps.index].content,
-  posX: state.tiles[ownProps.index].posX,
-  posY: state.tiles[ownProps.index].posY,
 });
 
 export default connect(mapToProps)(Tile);

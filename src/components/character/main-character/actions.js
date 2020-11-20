@@ -7,6 +7,7 @@ export const actionsType = {
   NEXT_FRAME: 'NEXT_FRAME',
   UPDATE_POS: 'UPDATE_POS',
   MOVING: 'MOVING',
+  REMOVE_MOVING_DIRECTION: 'REMOVE_MOVING_DIRECTION',
 };
 
 export const changeName = (name) => ({
@@ -42,4 +43,8 @@ export const updatePos = (posX, posY) => ({
 
 export const moving = () => ({
   type: actionsType.MOVING,
+});
+
+export const removeMovingDirection = () => ({
+  type: actionsType.REMOVE_MOVING_DIRECTION,
 });
