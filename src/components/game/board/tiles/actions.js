@@ -3,6 +3,7 @@ export const actionsType = {
   REMOVE_MAIN_CHARACTER: 'REMOVE_MAIN_CHARACTER',
   ADD_NPC: 'ADD_NPC',
   REMOVE_NPC: 'REMOVE_NPC',
+  UPDATE_TILES: 'UPDATE_TILES',
 };
 
 export const addMainCharacter = (posX, posY) => ({
@@ -25,4 +26,9 @@ export const addNPC = (posX, posY, name) => ({
 export const removeNPC = (name) => ({
   type: actionsType.REMOVE_NPC,
   name,
+});
+
+export const updateTiles = (tiles) => ({
+  type: actionsType.UPDATE_TILES,
+  tiles,
 });

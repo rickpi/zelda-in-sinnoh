@@ -20,6 +20,7 @@ class Board extends React.Component {
 
   render() {
     const { tab } = this.props;
+
     return (
       <div className="board">
         <Tiles tiles={tab.tiles} />
@@ -29,7 +30,9 @@ class Board extends React.Component {
 }
 
 const mapToProps = (state) => ({
-  tab: state.board.levels[state.board.currentLevel].tabs[state.board.currentTab],
+  tab: state.board
+    .levels[state.board.currentLevel]
+    .tabs[state.board.currentTab],
   mainPosX: state.mainCharacter.posX,
   mainPosY: state.mainCharacter.posY,
   crehelfPosX: state.crehelf.posX,

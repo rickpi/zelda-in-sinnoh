@@ -11,7 +11,8 @@ const initialState = {
   words: [
     {
       sentences: [
-        'Tu dois sauver le monde.',
+        'Sinnoh est en danger...',
+        'Tu dois nous aider.',
         'Suis moi.',
       ],
     },

@@ -56,6 +56,8 @@ const removeNPC = (state, action) => (
   })
 );
 
+const updateTiles = (state, action) => action.tiles;
+
 const tiles = (state = initialState, action) => {
   switch (action.type) {
     case actionsType.ADD_MAIN_CHARACTER:
@@ -66,6 +68,8 @@ const tiles = (state = initialState, action) => {
       return addNPC(state, action);
     case actionsType.REMOVE_NPC:
       return removeNPC(state, action);
+    case actionsType.UPDATE_TILES:
+      return updateTiles(state, action);
     default:
       return state;
   }

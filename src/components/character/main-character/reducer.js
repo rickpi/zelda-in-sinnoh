@@ -4,7 +4,7 @@ const initialState = {
   name: '',
   frame: 0,
   orientation: 'front',
-  posX: 3,
+  posX: 14,
   posY: 5,
   isMoving: false,
   movingDirection: '',

@@ -14,6 +14,7 @@ import '../../../assets/css/main/torterra.css';
 import store from '../../../store';
 import * as actions from './actions';
 import * as tilesActions from '../../game/board/tiles/actions';
+import * as boardActions from '../../game/board/actions';
 
 class MainCharacter extends React.Component {
   constructor(props) {
@@ -25,6 +26,7 @@ class MainCharacter extends React.Component {
     this.handleArrowLeft = this.handleArrowLeft.bind(this);
     this.handleArrowRight = this.handleArrowRight.bind(this);
     this.canGoHere = this.canGoHere.bind(this);
+    this.isOutOfTab = this.isOutOfTab.bind(this);
     this.interval = null;
   }
 
@@ -59,6 +61,7 @@ class MainCharacter extends React.Component {
           break;
       }
     }
+    return this;
   }
 
   handleMoving(posX, posY, movingAction) {
@@ -104,8 +107,16 @@ class MainCharacter extends React.Component {
   }
 
   handleArrowRight() {
-    const { character } = this.props;
-
+    const { character, currentTab } = this.props;
+    if (this.isOutOfTab(character.posX + 1, character.posY)) {
+      store.dispatch(actions.updatePos(0, character.posY));
+      store.dispatch(boardActions.updateTab(currentTab.right));
+      const { currentTab: newCurrentTab } = this.props;
+      store.dispatch(tilesActions.removeMainCharacter());
+      store.dispatch(tilesActions.updateTiles(newCurrentTab.tiles));
+      store.dispatch(tilesActions.addMainCharacter(0, character.posY));
+      return;
+    }
     if (this.canGoHere(character.posX + 1, character.posY)) {
       if (!character.isMoving) {
         this.handleMoving(character.posX + 1, character.posY, actions.moveRight);
@@ -116,6 +127,10 @@ class MainCharacter extends React.Component {
   canGoHere(posX, posY) {
     const { tiles } = this.props;
     return tiles[posY * 15 + posX].walkedOn;
+  }
+
+  isOutOfTab(posX, posY) {
+    return posX <= 0 || posX >= 15 || posY <= 0 || posY >= 12;
   }
 
   render() {
@@ -141,6 +156,9 @@ const mapToProps = (state) => ({
   character: state.mainCharacter,
   tiles: state.tiles,
   discussion: state.NPCTalkingBox.discussion,
+  currentTab: state.board
+    .levels[state.board.currentLevel]
+    .tabs[state.board.currentTab],
 });
 
 export default connect(mapToProps)(MainCharacter);
