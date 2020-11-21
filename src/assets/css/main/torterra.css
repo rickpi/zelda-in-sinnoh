@@ -1,0 +1,111 @@
+.torterra-front-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') 0 0 no-repeat;
+} 
+
+.torterra-front-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -64px 0 no-repeat;
+}
+
+.torterra-front-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -128px 0 no-repeat;
+}
+
+.torterra-front-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -192px 0 no-repeat;
+}
+
+.torterra-left-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') 0 -64px no-repeat;
+} 
+
+.torterra-left-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -64px -64px no-repeat;
+}
+
+.torterra-left-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -128px -64px no-repeat;
+}
+
+.torterra-left-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -192px -64px no-repeat;
+}
+
+.torterra-right-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') 0 -128px no-repeat;
+} 
+
+.torterra-right-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -64px -128px no-repeat;
+}
+
+.torterra-right-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -128px -128px no-repeat;
+}
+
+.torterra-right-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -192px -128px no-repeat;
+}
+
+.torterra-back-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') 0 -192px no-repeat;
+} 
+
+.torterra-back-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -64px -192px no-repeat;
+}
+
+.torterra-back-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -128px -192px no-repeat;
+}
+
+.torterra-back-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/torterra.png') -192px -192px no-repeat;
+}

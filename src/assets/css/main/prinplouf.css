@@ -1,0 +1,111 @@
+.prinplouf-front-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') 0 0 no-repeat;
+} 
+
+.prinplouf-front-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -64px 0 no-repeat;
+}
+
+.prinplouf-front-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -128px 0 no-repeat;
+}
+
+.prinplouf-front-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -192px 0 no-repeat;
+}
+
+.prinplouf-left-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') 0 -64px no-repeat;
+} 
+
+.prinplouf-left-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -64px -64px no-repeat;
+}
+
+.prinplouf-left-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -128px -64px no-repeat;
+}
+
+.prinplouf-left-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -192px -64px no-repeat;
+}
+
+.prinplouf-right-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') 0 -128px no-repeat;
+} 
+
+.prinplouf-right-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -64px -128px no-repeat;
+}
+
+.prinplouf-right-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -128px -128px no-repeat;
+}
+
+.prinplouf-right-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -192px -128px no-repeat;
+}
+
+.prinplouf-back-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') 0 -192px no-repeat;
+} 
+
+.prinplouf-back-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -64px -192px no-repeat;
+}
+
+.prinplouf-back-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -128px -192px no-repeat;
+}
+
+.prinplouf-back-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/main/prinplouf.png') -192px -192px no-repeat;
+}

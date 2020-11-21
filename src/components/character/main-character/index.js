@@ -1,16 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import '../../../assets/css/tiplouf.css';
-import '../../../assets/css/prinplouf.css';
-import '../../../assets/css/pingoleon.css';
-import '../../../assets/css/ouisticram.css';
-import '../../../assets/css/chimpenfeu.css';
-import '../../../assets/css/simiabraz.css';
-import '../../../assets/css/tortipouss.css';
-import '../../../assets/css/boskara.css';
-import '../../../assets/css/torterra.css';
-import '../../../assets/css/crehelf.css';
+import '../../../assets/css/main/tiplouf.css';
+import '../../../assets/css/main/prinplouf.css';
+import '../../../assets/css/main/pingoleon.css';
+import '../../../assets/css/main/ouisticram.css';
+import '../../../assets/css/main/chimpenfeu.css';
+import '../../../assets/css/main/simiabraz.css';
+import '../../../assets/css/main/tortipouss.css';
+import '../../../assets/css/main/boskara.css';
+import '../../../assets/css/main/torterra.css';
+import '../../../assets/css/npc/crehelf.css';
 
 import store from '../../../store';
 import * as actions from './actions';
