@@ -36,7 +36,7 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: repeat(12, 40px);
+  grid-template-rows: repeat(13, 40px);
   overflow: hidden;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .moving-up {
-  animation: movingUp 400ms linear forwards;
+  animation: movingUp 200ms linear forwards;
 }
 
 @keyframes movingUp {
@@ -78,7 +78,7 @@
 }
 
 .moving-down {
-  animation: movingDown 400ms linear forwards;
+  animation: movingDown 200ms linear forwards;
 }
 
 @keyframes movingDown {
@@ -90,7 +90,7 @@
   }
 }
 .moving-left {
-  animation: movingLeft 400ms linear forwards;
+  animation: movingLeft 200ms linear forwards;
 }
 
 @keyframes movingLeft {
@@ -102,7 +102,7 @@
   }
 }
 .moving-right {
-  animation: movingRight 400ms linear forwards;
+  animation: movingRight 200ms linear forwards;
 }
 
 @keyframes movingRight {

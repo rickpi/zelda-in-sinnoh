@@ -5,6 +5,9 @@ const level1 = {
       right: 1,
       bottom: -1,
       left: -1,
+      npc: [
+        'crehelf',
+      ],
       tiles: [
         {
           posX: 0,
@@ -304,9 +307,7 @@ const level1 = {
           posY: 2,
           base: 'grass',
           walkedOn: true,
-          content: [
-            'character',
-          ],
+          content: [],
         },
         {
           posX: 8,
@@ -547,31 +548,37 @@ const level1 = {
           posX: 11,
           posY: 4,
           base: 'grass',
-          walkedOn: true,
-          content: [],
+          walkedOn: false,
+          content: [
+            'water-top-left',
+          ],
         },
         {
           posX: 12,
+          posY: 4,
+          base: 'grass',
+          walkedOn: false,
+          content: [
+            'water-top',
+          ],
+        },
+        {
+          posX: 13,
+          posY: 4,
+          base: 'grass',
+          walkedOn: false,
+          content: [
+            'water-top-right',
+          ],
+        },
+        {
+          posX: 14,
           posY: 4,
           base: 'grass',
           walkedOn: true,
           content: [],
         },
         {
-          posX: 13,
-          posY: 4,
-          base: 'grass',
-          walkedOn: true,
-          content: [],
-        },
-        {
-          posX: 14,
-          posY: 4,
-          base: 'grass',
-          walkedOn: true,
-          content: [],
-        },
-        {
           posX: 0,
           posY: 5,
           base: 'grass',
@@ -654,22 +661,28 @@ const level1 = {
           posX: 11,
           posY: 5,
           base: 'grass',
-          walkedOn: true,
-          content: [],
+          walkedOn: false,
+          content: [
+            'water-left',
+          ],
         },
         {
           posX: 12,
           posY: 5,
           base: 'grass',
-          walkedOn: true,
-          content: [],
+          walkedOn: false,
+          content: [
+            'water',
+          ],
         },
         {
           posX: 13,
           posY: 5,
           base: 'grass',
-          walkedOn: true,
-          content: [],
+          walkedOn: false,
+          content: [
+            'water-right',
+          ],
         },
         {
           posX: 14,
@@ -761,31 +774,37 @@ const level1 = {
           posX: 11,
           posY: 6,
           base: 'grass',
-          walkedOn: true,
-          content: [],
+          walkedOn: false,
+          content: [
+            'water-bottom-left',
+          ],
         },
         {
           posX: 12,
+          posY: 6,
+          base: 'grass',
+          walkedOn: false,
+          content: [
+            'water-bottom',
+          ],
+        },
+        {
+          posX: 13,
+          posY: 6,
+          base: 'grass',
+          walkedOn: false,
+          content: [
+            'water-bottom-right',
+          ],
+        },
+        {
+          posX: 14,
           posY: 6,
           base: 'grass',
           walkedOn: true,
           content: [],
         },
         {
-          posX: 13,
-          posY: 6,
-          base: 'grass',
-          walkedOn: true,
-          content: [],
-        },
-        {
-          posX: 14,
-          posY: 6,
-          base: 'grass',
-          walkedOn: true,
-          content: [],
-        },
-        {
           posX: 0,
           posY: 7,
           base: 'grass',
@@ -1219,12 +1238,119 @@ const level1 = {
           base: 'grass',
           walkedOn: false,
           content: [
-            'tree-close-both-sides',
+            'tree',
           ],
         },
         {
           posX: 1,
           posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 2,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 3,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 4,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 5,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 6,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 7,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 8,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 9,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 10,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 11,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 12,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 13,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 14,
+          posY: 11,
+          base: 'grass',
+          walkedOn: true,
+          content: [],
+        },
+        {
+          posX: 0,
+          posY: 12,
+          base: 'grass',
+          walkedOn: false,
+          content: [
+            'tree-close-both-sides',
+          ],
+        },
+        {
+          posX: 1,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1233,7 +1359,7 @@ const level1 = {
         },
         {
           posX: 2,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1242,7 +1368,7 @@ const level1 = {
         },
         {
           posX: 3,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1251,7 +1377,7 @@ const level1 = {
         },
         {
           posX: 4,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1260,7 +1386,7 @@ const level1 = {
         },
         {
           posX: 5,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1269,7 +1395,7 @@ const level1 = {
         },
         {
           posX: 6,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1278,7 +1404,7 @@ const level1 = {
         },
         {
           posX: 7,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1287,7 +1413,7 @@ const level1 = {
         },
         {
           posX: 8,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1296,7 +1422,7 @@ const level1 = {
         },
         {
           posX: 9,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1305,7 +1431,7 @@ const level1 = {
         },
         {
           posX: 10,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1314,7 +1440,7 @@ const level1 = {
         },
         {
           posX: 11,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1323,7 +1449,7 @@ const level1 = {
         },
         {
           posX: 12,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1332,7 +1458,7 @@ const level1 = {
         },
         {
           posX: 13,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [
@@ -1341,7 +1467,7 @@ const level1 = {
         },
         {
           posX: 14,
-          posY: 11,
+          posY: 12,
           base: 'grass',
           walkedOn: false,
           content: [

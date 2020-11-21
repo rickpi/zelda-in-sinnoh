@@ -10,7 +10,6 @@ import '../../../assets/css/main/simiabraz.css';
 import '../../../assets/css/main/tortipouss.css';
 import '../../../assets/css/main/boskara.css';
 import '../../../assets/css/main/torterra.css';
-import '../../../assets/css/npc/crehelf.css';
 
 import store from '../../../store';
 import * as actions from './actions';
@@ -68,7 +67,7 @@ class MainCharacter extends React.Component {
       store.dispatch(actions.removeMovingDirection());
       store.dispatch(tilesActions.addMainCharacter(posX, posY));
       store.dispatch(actions.moving());
-    }, 400);
+    }, 200);
   }
 
   handleArrowUp() {
@@ -123,7 +122,7 @@ class MainCharacter extends React.Component {
       `${character.name}-${character.orientation}-${character.frame}`,
     ];
 
-    if (character.name === '') store.dispatch(actions.changeName('crehelf'));
+    if (character.name === '') store.dispatch(actions.changeName('pingoleon'));
 
     if (character.movingDirection !== '') classNames.push([`moving-${character.movingDirection}`]);
 

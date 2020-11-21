@@ -1,6 +1,8 @@
 export const actionsType = {
   ADD_MAIN_CHARACTER: 'ADD_MAIN_CHARACTER',
   REMOVE_MAIN_CHARACTER: 'REMOVE_MAIN_CHARACTER',
+  ADD_NPC: 'ADD_NPC',
+  REMOVE_NPC: 'REMOVE_NPC',
 };
 
 export const addMainCharacter = (posX, posY) => ({
@@ -11,4 +13,16 @@ export const addMainCharacter = (posX, posY) => ({
 
 export const removeMainCharacter = () => ({
   type: actionsType.REMOVE_MAIN_CHARACTER,
+});
+
+export const addNPC = (posX, posY, name) => ({
+  type: actionsType.ADD_NPC,
+  posX,
+  posY,
+  name,
+});
+
+export const removeNPC = (name) => ({
+  type: actionsType.REMOVE_NPC,
+  name,
 });
