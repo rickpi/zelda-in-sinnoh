@@ -1,6 +1,6 @@
 export const actionsType = {
-  START_CINEMATIC: 'START_CINEMATIC',
-  END_CINEMATIC: 'END_CINEMATIC',
+  START_DISCUSSION: 'START_DISCUSSION',
+  END_DISCUSSION: 'END_DISCUSSION',
   START_TALKING: 'START_TALKING',
   END_TALKING: 'END_TALKING',
   START_RELOADING: 'START_RELOADING',
@@ -16,12 +16,12 @@ export const endTalking = () => ({
   type: actionsType.END_TALKING,
 });
 
-export const startCinematic = () => ({
-  type: actionsType.START_CINEMATIC,
+export const startDiscussion = () => ({
+  type: actionsType.START_DISCUSSION,
 });
 
-export const endCinematic = () => ({
-  type: actionsType.END_CINEMATIC,
+export const endDiscussion = () => ({
+  type: actionsType.END_DISCUSSION,
 });
 
 export const startReloading = () => ({

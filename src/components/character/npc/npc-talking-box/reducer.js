@@ -1,20 +1,20 @@
 import { actionsType } from './actions';
 
 const initialState = {
-  cinematic: false,
+  discussion: false,
   isTalking: false,
   isReloading: false,
   sentence: '',
 };
 
-const startCinematic = (state) => ({
+const startDiscussion = (state) => ({
   ...state,
-  cinematic: true,
+  discussion: true,
 });
 
-const endCinematic = (state) => ({
+const endDiscussion = (state) => ({
   ...state,
-  cinematic: false,
+  discussion: false,
 });
 
 const startTalking = (state) => ({
@@ -44,10 +44,10 @@ const updateSentence = (state, action) => ({
 
 const NPCTalkingBox = (state = initialState, action) => {
   switch (action.type) {
-    case actionsType.START_CINEMATIC:
-      return startCinematic(state);
-    case actionsType.END_CINEMATIC:
-      return endCinematic(state);
+    case actionsType.START_DISCUSSION:
+      return startDiscussion(state);
+    case actionsType.END_DISCUSSION:
+      return endDiscussion(state);
     case actionsType.START_TALKING:
       return startTalking(state);
     case actionsType.END_TALKING:

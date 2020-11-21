@@ -125,3 +125,16 @@
   background: url('../../sprites/npc/crehelf.png') -192px -192px no-repeat;
   z-index: 50 !important;
 }
+
+.crehelf-cinematic-0 {
+  animation: firstCinematic 2000ms linear forwards;
+}
+
+@keyframes firstCinematic {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(160px);
+  }
+}

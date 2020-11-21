@@ -39,22 +39,25 @@ class MainCharacter extends React.Component {
 
   handleKeyDown(event) {
     const { key } = event;
+    const { discussion } = this.props;
 
-    switch (key) {
-      case 'ArrowUp':
-        this.handleArrowUp();
-        break;
-      case 'ArrowDown':
-        this.handleArrowDown();
-        break;
-      case 'ArrowLeft':
-        this.handleArrowLeft();
-        break;
-      case 'ArrowRight':
-        this.handleArrowRight();
-        break;
-      default:
-        break;
+    if (!discussion) {
+      switch (key) {
+        case 'ArrowUp':
+          this.handleArrowUp();
+          break;
+        case 'ArrowDown':
+          this.handleArrowDown();
+          break;
+        case 'ArrowLeft':
+          this.handleArrowLeft();
+          break;
+        case 'ArrowRight':
+          this.handleArrowRight();
+          break;
+        default:
+          break;
+      }
     }
   }
 
@@ -137,6 +140,7 @@ class MainCharacter extends React.Component {
 const mapToProps = (state) => ({
   character: state.mainCharacter,
   tiles: state.tiles,
+  discussion: state.NPCTalkingBox.discussion,
 });
 
 export default connect(mapToProps)(MainCharacter);

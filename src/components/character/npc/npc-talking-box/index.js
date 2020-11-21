@@ -2,11 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const NPCTalkingBox = ({
-  cinematic,
+  discussion,
   sentence,
   isReloading,
 }) => {
-  if (isReloading || !cinematic) return <div />;
+  if (isReloading || !discussion) return <div />;
 
   return (
     <div className="npc-talking">
@@ -19,7 +19,7 @@ const NPCTalkingBox = ({
 };
 
 const mapToProps = (state) => ({
-  cinematic: state.NPCTalkingBox.cinematic,
+  discussion: state.NPCTalkingBox.discussion,
   isReloading: state.NPCTalkingBox.isReloading,
   sentence: state.NPCTalkingBox.sentence,
 });
