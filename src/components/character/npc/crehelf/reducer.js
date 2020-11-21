@@ -31,10 +31,11 @@ const nextFrameNPC = (state) => {
 
 const nextWord = (state) => {
   const { currentWord } = state;
+  const newWord = currentWord + 1 !== state.words.length ? currentWord + 1 : 0;
 
   return {
     ...state,
-    currentWord: currentWord + 1,
+    currentWord: newWord,
     currentSentence: 0,
   };
 };

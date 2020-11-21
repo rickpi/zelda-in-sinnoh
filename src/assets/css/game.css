@@ -64,12 +64,6 @@
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
   border-radius: .25em;
-  opacity: 1;
-  transition: opacity 500ms;
-}
-
-.npc-talking--hide {
-  opacity: 0;
 }
 
 .npc-talking__wrap {

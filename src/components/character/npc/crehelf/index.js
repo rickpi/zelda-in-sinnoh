@@ -15,12 +15,13 @@ class Crehelf extends React.Component {
     this.handleKeyDown = this.handleKeyDown.bind(this);
     this.startCinematic = this.startCinematic.bind(this);
     this.handleNextSentence = this.handleNextSentence.bind(this);
+    this.handleNextWord = this.handleNextWord.bind(this);
   }
 
   componentDidMount() {
     this.interval = setInterval(() => store.dispatch(actions.nextFrameNPC()), 150);
     document.addEventListener('keydown', this.handleKeyDown);
-    this.startCinematic();
+    this.startCinematic(1000);
   }
 
   componentWillUnmount() {
@@ -54,7 +55,7 @@ class Crehelf extends React.Component {
       const { currentSentence } = this.props;
 
       if (currentSentence === sentences.length) {
-        store.dispatch(talkingActions.startCinematic());
+        this.handleNextWord();
       } else {
         store.dispatch(talkingActions.updateSentence(sentences[currentSentence]));
         store.dispatch(talkingActions.endReloading());
@@ -63,7 +64,13 @@ class Crehelf extends React.Component {
     }
   }
 
-  startCinematic() {
+  handleNextWord() {
+    store.dispatch(talkingActions.endCinematic());
+    store.dispatch(talkingActions.endReloading());
+    store.dispatch(actions.nextWord());
+  }
+
+  startCinematic(delay = 0) {
     const { cinematic, sentences, currentSentence } = this.props;
 
     if (!cinematic) {
@@ -71,8 +78,8 @@ class Crehelf extends React.Component {
       setTimeout(() => {
         store.dispatch(talkingActions.startCinematic());
         store.dispatch(talkingActions.startTalking());
-      }, 1000);
-      setTimeout(() => store.dispatch(talkingActions.endTalking()), 3500);
+      }, delay);
+      setTimeout(() => store.dispatch(talkingActions.endTalking()), delay + 2200);
     }
   }
 
