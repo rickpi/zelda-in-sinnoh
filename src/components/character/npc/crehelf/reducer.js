@@ -8,6 +8,16 @@ const initialState = {
   posY: 5,
   isMoving: false,
   movingDirection: '',
+  words: [
+    {
+      sentences: [
+        'Tu dois sauver le monde.',
+        'Suis moi.',
+      ],
+    },
+  ],
+  currentSentence: 0,
+  currentWord: 0,
 };
 
 const nextFrameNPC = (state) => {
@@ -19,10 +29,33 @@ const nextFrameNPC = (state) => {
   };
 };
 
+const nextWord = (state) => {
+  const { currentWord } = state;
+
+  return {
+    ...state,
+    currentWord: currentWord + 1,
+    currentSentence: 0,
+  };
+};
+
+const nextSentence = (state) => {
+  const { currentSentence } = state;
+
+  return {
+    ...state,
+    currentSentence: currentSentence + 1,
+  };
+};
+
 const crehelf = (state = initialState, action) => {
   switch (action.type) {
     case actionsType.NEXT_FRAME_NPC:
       return nextFrameNPC(state);
+    case actionsType.NEXT_WORD:
+      return nextWord(state);
+    case actionsType.NEXT_SENTENCE:
+      return nextSentence(state);
     default:
       return state;
   }
