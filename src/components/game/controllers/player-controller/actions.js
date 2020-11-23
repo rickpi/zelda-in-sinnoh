@@ -1,5 +1,5 @@
 export const actionsType = {
-  SET_PLAYER_NAME: 'SET_PLAYER',
+  SET_PLAYER_NAME: 'SET_PLAYER_NAME',
   SET_PLAYER_CHARACTER: 'SET_PLAYER_CHARACTER',
   EVOLVE: 'EVOLVE',
   SET_PLAYER_POS: 'SET_PLAYER_POS',
@@ -13,7 +13,7 @@ export const setPlayerName = (name) => ({
 });
 
 export const setPlayerCharacter = (character) => ({
-  type: actionsType.SET_PLAYER_NAME,
+  type: actionsType.SET_PLAYER_CHARACTER,
   character,
 });
 

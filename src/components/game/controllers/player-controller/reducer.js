@@ -13,7 +13,7 @@ const initialState = {
 
 const setPlayerName = (state, action) => ({
   ...state,
-  name: action.name,
+  playerName: action.name,
 });
 
 const setPlayerCharacter = (state, action) => ({
