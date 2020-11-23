@@ -1,6 +1,6 @@
 import { actionsType } from './actions';
 
-import level1 from '../../../assets/data/level1';
+import level1 from '../../../assets/data/levels/level1';
 
 const initialState = {
   levels: [{
