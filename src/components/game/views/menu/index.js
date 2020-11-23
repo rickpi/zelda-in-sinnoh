@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import store from '../../../../store';
 import * as gameActions from '../../actions';
 import * as playerActions from '../../controllers/player-controller/actions';
+import * as boardActions from '../board/actions';
 
 const startingCharacters = [
   'tortipouss',
@@ -27,7 +28,7 @@ class Menu extends React.Component {
   }
 
   render() {
-    const { playerName, character } = this.props;
+    const { playerName, character, board } = this.props;
 
     return (
       <div className="board">
@@ -49,7 +50,15 @@ class Menu extends React.Component {
             </div>
           );
         })}
-        <button type="button" onClick={() => store.dispatch(gameActions.init())}>
+        <button
+          type="button"
+          onClick={() => {
+            store.dispatch(gameActions.startLoading());
+            console.log(board);
+            store.dispatch(boardActions.loadBoard(board));
+            store.dispatch(gameActions.init());
+          }}
+        >
           {'Commencer l\'aventure'}
         </button>
       </div>
@@ -60,6 +69,7 @@ class Menu extends React.Component {
 const mapToProps = (state) => ({
   playerName: state.player.playerName,
   character: state.player.character,
+  board: state.game.levels[state.game.level],
 });
 
 export default connect(mapToProps)(Menu);

@@ -1,5 +1,6 @@
 const level1 = {
-  tabs: [
+  board: 0,
+  boards: [
     {
       top: -1,
       right: 1,

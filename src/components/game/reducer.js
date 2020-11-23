@@ -1,9 +1,14 @@
 import { actionsType } from './actions';
 
+import level1 from '../../assets/data/levels/level1';
+
 const initialState = {
   isInit: false,
   isLoading: false,
   level: 0,
+  levels: [{
+    ...level1,
+  }],
 };
 
 const init = (state) => ({
@@ -45,7 +50,7 @@ const game = (state = initialState, action) => {
       return init(state);
     case actionsType.START_LOADING:
       return startLoading(state);
-    case actionsType.stopLoading:
+    case actionsType.STOP_LOADING:
       return stopLoading(state);
     case actionsType.previousLevel:
       return previousLevel(state);
