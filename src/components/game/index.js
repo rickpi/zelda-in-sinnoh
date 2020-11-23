@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import Controllers from './controllers';
 import Header from './views/header';
@@ -8,7 +9,7 @@ import Board from './views/board';
 import '../../assets/css/game.css';
 
 const Game = ({ isInit }) => {
-  const container = !isInit ? <Board /> : <Menu />;
+  const container = !isInit ? <Menu /> : <Board />;
   return (
     <div className="game">
       <Controllers />
@@ -20,4 +21,8 @@ const Game = ({ isInit }) => {
   );
 };
 
-export default Game;
+const mapToProps = (state) => ({
+  isInit: state.game.isInit,
+});
+
+export default connect(mapToProps)(Game);
