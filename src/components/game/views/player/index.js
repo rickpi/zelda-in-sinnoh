@@ -14,14 +14,18 @@ class Player extends React.Component {
     this.interval = setInterval(() => store.dispatch(actions.nextPlayerFrame()), 150);
   }
 
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   render() {
-    const { player } = this.props;
+    const { player, playerController } = this.props;
     const classNames = [
       'tile__content',
       `${player.character}-${player.orientation}-${player.frame}`,
     ];
 
-    // if (player.movingDirection !== '') classNames.push([`moving-${player.movingDirection}`]);
+    if (playerController.isMoving) classNames.push([`moving-${player.orientation}`]);
 
     return (
       <div
@@ -33,6 +37,7 @@ class Player extends React.Component {
 
 const mapToProps = (state) => ({
   player: state.player,
+  playerController: state.playerController,
 });
 
 export default connect(mapToProps)(Player);

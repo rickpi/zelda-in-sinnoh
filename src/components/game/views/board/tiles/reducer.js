@@ -32,6 +32,24 @@ const addCharacter = (state, action) => {
   };
 };
 
+const removeCharacter = (state, action) => {
+  const tiles = state.tiles.map((tile) => {
+    if (action.x === tile.x && action.y === tile.y) {
+      return {
+        ...tile,
+        content: tile.content.filter((item) => item !== action.name),
+        walkedOn: true,
+      };
+    }
+    return tile;
+  });
+
+  return {
+    ...state,
+    tiles,
+  };
+};
+
 const tiles = (state = initialState, action) => {
   switch (action.type) {
     case actionsType.LOAD_TILES:
@@ -40,8 +58,8 @@ const tiles = (state = initialState, action) => {
     //   return removeNPCFromBoard(state, action);
     case actionsType.ADD_CHARACTER:
       return addCharacter(state, action);
-    // case actionsType.REMOVE_CHARACTER:
-    //   return removeCharacter(state, action);
+    case actionsType.REMOVE_CHARACTER:
+      return removeCharacter(state, action);
     default:
       return state;
   }

@@ -32,8 +32,10 @@ const evolve = (state) => {
 
 const setPlayerPos = (state, action) => ({
   ...state,
-  x: action.x,
-  y: action.y,
+  pos: {
+    x: action.x,
+    y: action.y,
+  },
 });
 
 const startPlayerMoving = (state) => ({

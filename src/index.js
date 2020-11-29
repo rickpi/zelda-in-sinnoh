@@ -17,6 +17,7 @@ import './assets/css/player/simiabraz.css';
 import './assets/css/player/tiplouf.css';
 import './assets/css/player/prinplouf.css';
 import './assets/css/player/pingoleon.css';
+import './assets/css/player/actions.css';
 
 ReactDOM.render(
   <Provider store={store}>

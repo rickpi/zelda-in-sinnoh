@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import store from '../../../../store';
 import * as gameActions from '../../actions';
-import * as playerActions from '../../controllers/player-controller/actions';
+import * as playerControllerActions from '../../controllers/player-controller/actions';
 import * as boardActions from '../board/actions';
 
 const startingCharacters = [
@@ -20,11 +20,11 @@ class Menu extends React.Component {
   }
 
   handleChangeInput(event) {
-    store.dispatch(playerActions.setPlayerName(event.target.value));
+    store.dispatch(playerControllerActions.setPlayerName(event.target.value));
   }
 
   handleChangeRadio(event) {
-    store.dispatch(playerActions.setPlayerCharacter(parseInt(event.target.value, 10)));
+    store.dispatch(playerControllerActions.setPlayerCharacter(parseInt(event.target.value, 10)));
   }
 
   render() {
@@ -66,8 +66,8 @@ class Menu extends React.Component {
 }
 
 const mapToProps = (state) => ({
-  playerName: state.player.playerName,
-  character: state.player.character,
+  playerName: state.playerController.playerName,
+  character: state.playerController.character,
   boards: state.game.levels[state.game.level],
 });
 
