@@ -1,25 +1,25 @@
-.torterra-front-0 {
+.torterra-down-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/torterra.png') 0 0 no-repeat;
 } 
 
-.torterra-front-1 {
+.torterra-down-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/torterra.png') -64px 0 no-repeat;
 }
 
-.torterra-front-2 {
+.torterra-down-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/torterra.png') -128px 0 no-repeat;
 }
 
-.torterra-front-3 {
+.torterra-down-3 {
   width: 64px;
   height: 64px;
   left: -12px;
@@ -82,28 +82,28 @@
   background: url('../../sprites/player/torterra.png') -192px -128px no-repeat;
 }
 
-.torterra-back-0 {
+.torterra-up-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/torterra.png') 0 -192px no-repeat;
 } 
 
-.torterra-back-1 {
+.torterra-up-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/torterra.png') -64px -192px no-repeat;
 }
 
-.torterra-back-2 {
+.torterra-up-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/torterra.png') -128px -192px no-repeat;
 }
 
-.torterra-back-3 {
+.torterra-up-3 {
   width: 64px;
   height: 64px;
   left: -12px;

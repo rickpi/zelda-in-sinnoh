@@ -1,25 +1,25 @@
-.tiplouf-front-0 {
+.tiplouf-down-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tiplouf.png') 0 0 no-repeat;
 } 
 
-.tiplouf-front-1 {
+.tiplouf-down-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tiplouf.png') -64px 0 no-repeat;
 }
 
-.tiplouf-front-2 {
+.tiplouf-down-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tiplouf.png') -128px 0 no-repeat;
 }
 
-.tiplouf-front-3 {
+.tiplouf-down-3 {
   width: 64px;
   height: 64px;
   left: -12px;
@@ -82,28 +82,28 @@
   background: url('../../sprites/player/tiplouf.png') -192px -128px no-repeat;
 }
 
-.tiplouf-back-0 {
+.tiplouf-up-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tiplouf.png') 0 -192px no-repeat;
 } 
 
-.tiplouf-back-1 {
+.tiplouf-up-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tiplouf.png') -64px -192px no-repeat;
 }
 
-.tiplouf-back-2 {
+.tiplouf-up-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tiplouf.png') -128px -192px no-repeat;
 }
 
-.tiplouf-back-3 {
+.tiplouf-up-3 {
   width: 64px;
   height: 64px;
   left: -12px;

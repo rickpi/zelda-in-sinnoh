@@ -1,25 +1,25 @@
-.prinplouf-front-0 {
+.prinplouf-down-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/prinplouf.png') 0 0 no-repeat;
 } 
 
-.prinplouf-front-1 {
+.prinplouf-down-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/prinplouf.png') -64px 0 no-repeat;
 }
 
-.prinplouf-front-2 {
+.prinplouf-down-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/prinplouf.png') -128px 0 no-repeat;
 }
 
-.prinplouf-front-3 {
+.prinplouf-down-3 {
   width: 64px;
   height: 64px;
   left: -12px;
@@ -82,28 +82,28 @@
   background: url('../../sprites/player/prinplouf.png') -192px -128px no-repeat;
 }
 
-.prinplouf-back-0 {
+.prinplouf-up-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/prinplouf.png') 0 -192px no-repeat;
 } 
 
-.prinplouf-back-1 {
+.prinplouf-up-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/prinplouf.png') -64px -192px no-repeat;
 }
 
-.prinplouf-back-2 {
+.prinplouf-up-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/prinplouf.png') -128px -192px no-repeat;
 }
 
-.prinplouf-back-3 {
+.prinplouf-up-3 {
   width: 64px;
   height: 64px;
   left: -12px;

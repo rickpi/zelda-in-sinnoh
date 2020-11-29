@@ -1,25 +1,25 @@
-.pingoleon-front-0 {
+.pingoleon-down-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/pingoleon.png') 0 0 no-repeat;
 } 
 
-.pingoleon-front-1 {
+.pingoleon-down-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/pingoleon.png') -64px 0 no-repeat;
 }
 
-.pingoleon-front-2 {
+.pingoleon-down-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/pingoleon.png') -128px 0 no-repeat;
 }
 
-.pingoleon-front-3 {
+.pingoleon-down-3 {
   width: 64px;
   height: 64px;
   left: -12px;
@@ -82,28 +82,28 @@
   background: url('../../sprites/player/pingoleon.png') -192px -128px no-repeat;
 }
 
-.pingoleon-back-0 {
+.pingoleon-up-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/pingoleon.png') 0 -192px no-repeat;
 } 
 
-.pingoleon-back-1 {
+.pingoleon-up-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/pingoleon.png') -64px -192px no-repeat;
 }
 
-.pingoleon-back-2 {
+.pingoleon-up-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/pingoleon.png') -128px -192px no-repeat;
 }
 
-.pingoleon-back-3 {
+.pingoleon-up-3 {
   width: 64px;
   height: 64px;
   left: -12px;

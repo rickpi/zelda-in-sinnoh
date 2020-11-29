@@ -1,25 +1,25 @@
-.chimpenfeu-front-0 {
+.chimpenfeu-down-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/chimpenfeu.png') 0 0 no-repeat;
 } 
 
-.chimpenfeu-front-1 {
+.chimpenfeu-down-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/chimpenfeu.png') -64px 0 no-repeat;
 }
 
-.chimpenfeu-front-2 {
+.chimpenfeu-down-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/chimpenfeu.png') -128px 0 no-repeat;
 }
 
-.chimpenfeu-front-3 {
+.chimpenfeu-down-3 {
   width: 64px;
   height: 64px;
   left: -12px;
@@ -82,28 +82,28 @@
   background: url('../../sprites/player/chimpenfeu.png') -192px -128px no-repeat;
 }
 
-.chimpenfeu-back-0 {
+.chimpenfeu-up-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/chimpenfeu.png') 0 -192px no-repeat;
 } 
 
-.chimpenfeu-back-1 {
+.chimpenfeu-up-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/chimpenfeu.png') -64px -192px no-repeat;
 }
 
-.chimpenfeu-back-2 {
+.chimpenfeu-up-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/chimpenfeu.png') -128px -192px no-repeat;
 }
 
-.chimpenfeu-back-3 {
+.chimpenfeu-up-3 {
   width: 64px;
   height: 64px;
   left: -12px;

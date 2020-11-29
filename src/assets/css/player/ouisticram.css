@@ -1,25 +1,25 @@
-.ouisticram-front-0 {
+.ouisticram-down-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/ouisticram.png') 0 0 no-repeat;
 } 
 
-.ouisticram-front-1 {
+.ouisticram-down-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/ouisticram.png') -64px 0 no-repeat;
 }
 
-.ouisticram-front-2 {
+.ouisticram-down-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/ouisticram.png') -128px 0 no-repeat;
 }
 
-.ouisticram-front-3 {
+.ouisticram-down-3 {
   width: 64px;
   height: 64px;
   left: -12px;
@@ -82,28 +82,28 @@
   background: url('../../sprites/player/ouisticram.png') -192px -128px no-repeat;
 }
 
-.ouisticram-back-0 {
+.ouisticram-up-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/ouisticram.png') 0 -192px no-repeat;
 } 
 
-.ouisticram-back-1 {
+.ouisticram-up-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/ouisticram.png') -64px -192px no-repeat;
 }
 
-.ouisticram-back-2 {
+.ouisticram-up-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/ouisticram.png') -128px -192px no-repeat;
 }
 
-.ouisticram-back-3 {
+.ouisticram-up-3 {
   width: 64px;
   height: 64px;
   left: -12px;

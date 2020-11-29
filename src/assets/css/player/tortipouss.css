@@ -1,25 +1,25 @@
-.tortipouss-front-0 {
+.tortipouss-down-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tortipouss.png') 0 0 no-repeat;
 } 
 
-.tortipouss-front-1 {
+.tortipouss-down-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tortipouss.png') -64px 0 no-repeat;
 }
 
-.tortipouss-front-2 {
+.tortipouss-down-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tortipouss.png') -128px 0 no-repeat;
 }
 
-.tortipouss-front-3 {
+.tortipouss-down-3 {
   width: 64px;
   height: 64px;
   left: -12px;
@@ -82,28 +82,28 @@
   background: url('../../sprites/player/tortipouss.png') -192px -128px no-repeat;
 }
 
-.tortipouss-back-0 {
+.tortipouss-up-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tortipouss.png') 0 -192px no-repeat;
 } 
 
-.tortipouss-back-1 {
+.tortipouss-up-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tortipouss.png') -64px -192px no-repeat;
 }
 
-.tortipouss-back-2 {
+.tortipouss-up-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/tortipouss.png') -128px -192px no-repeat;
 }
 
-.tortipouss-back-3 {
+.tortipouss-up-3 {
   width: 64px;
   height: 64px;
   left: -12px;

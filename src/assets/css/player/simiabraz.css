@@ -1,25 +1,25 @@
-.simiabraz-front-0 {
+.simiabraz-down-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/simiabraz.png') 0 0 no-repeat;
 } 
 
-.simiabraz-front-1 {
+.simiabraz-down-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/simiabraz.png') -64px 0 no-repeat;
 }
 
-.simiabraz-front-2 {
+.simiabraz-down-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/simiabraz.png') -128px 0 no-repeat;
 }
 
-.simiabraz-front-3 {
+.simiabraz-down-3 {
   width: 64px;
   height: 64px;
   left: -12px;
@@ -82,28 +82,28 @@
   background: url('../../sprites/player/simiabraz.png') -192px -128px no-repeat;
 }
 
-.simiabraz-back-0 {
+.simiabraz-up-0 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/simiabraz.png') 0 -192px no-repeat;
 } 
 
-.simiabraz-back-1 {
+.simiabraz-up-1 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/simiabraz.png') -64px -192px no-repeat;
 }
 
-.simiabraz-back-2 {
+.simiabraz-up-2 {
   width: 64px;
   height: 64px;
   left: -12px;
   background: url('../../sprites/player/simiabraz.png') -128px -192px no-repeat;
 }
 
-.simiabraz-back-3 {
+.simiabraz-up-3 {
   width: 64px;
   height: 64px;
   left: -12px;
