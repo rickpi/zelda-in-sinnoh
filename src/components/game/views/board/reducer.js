@@ -1,8 +1,15 @@
 import { actionsType } from './actions';
 
+import level1 from '../../../../assets/data/levels/level1';
+
+// const initialState = {
+//   board: 0,
+//   boards: [],
+// };
+// dev mode
+
 const initialState = {
-  board: 0,
-  boards: [],
+  ...level1,
 };
 
 const loadBoard = (state, action) => ({

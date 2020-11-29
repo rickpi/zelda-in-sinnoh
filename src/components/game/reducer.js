@@ -2,8 +2,17 @@ import { actionsType } from './actions';
 
 import level1 from '../../assets/data/levels/level1';
 
+// const initialState = {
+//   isInit: false,
+//   isLoading: false,
+//   level: 0,
+//   levels: [{
+//     ...level1,
+//   }],
+// };
+// dev mode
 const initialState = {
-  isInit: false,
+  isInit: true,
   isLoading: false,
   level: 0,
   levels: [{

@@ -54,7 +54,6 @@ class Menu extends React.Component {
           type="button"
           onClick={() => {
             store.dispatch(gameActions.startLoading());
-            console.log(board);
             store.dispatch(boardActions.loadBoard(board));
             store.dispatch(gameActions.init());
           }}

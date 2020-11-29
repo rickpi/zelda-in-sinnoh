@@ -4,17 +4,8 @@ import { connect } from 'react-redux';
 import store from '../../../../store';
 import * as gameActions from '../../actions';
 
-const Tiles = () => (
-  <div>
-    Tiles
-  </div>
-);
-
-const LoadingScreen = () => (
-  <div className="loading-screen">
-    Chargement ...
-  </div>
-);
+import LoadingScreen from './loading-screen';
+import Tiles from './tiles';
 
 class Board extends React.Component {
   componentDidMount() {
@@ -23,8 +14,8 @@ class Board extends React.Component {
 
   render() {
     const { isLoading, board } = this.props;
-    const renderedComponent = isLoading ? <LoadingScreen /> : <Tiles />;
-    console.log(board);
+    const renderedComponent = isLoading ? <LoadingScreen /> : <Tiles tiles={board.tiles} />;
+
     return (
       <div className="board">
         { renderedComponent }

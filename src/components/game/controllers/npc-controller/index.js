@@ -1,8 +1,5 @@
 // import React from 'react';
 
-const NPCController = () => {
-  console.log('NPCController');
-  return null;
-};
+const NPCController = () => null;
 
 export default NPCController;

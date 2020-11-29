@@ -1,8 +1,5 @@
 // import React from 'react';
 
-const PlayerController = () => {
-  console.log('PlayerController');
-  return null;
-};
+const PlayerController = () => null;
 
 export default PlayerController;
