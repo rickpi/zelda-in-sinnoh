@@ -1,26 +1,27 @@
 export const actionsType = {
-  LOAD_BOARD: 'LOAD_BOARD',
-  REMOVE_NPC_FROM_BOARD: 'REMOVE_NPC_FROM_BOARD',
-  ADD_CHARACTER: 'ADD_CHARACTER',
-  REMOVE_CHARACTER: 'REMOVE_CHARACTER',
+  LOAD_BOARDS: 'LOAD_BOARDS',
 };
 
-export const loadBoard = (board) => ({
-  type: actionsType.LOAD_BOARD,
-  board,
+export const loadBoard = (boards) => ({
+  type: actionsType.LOAD_BOARDS,
+  boards,
 });
 
-export const removeNPCFromBoard = (id) => ({
-  type: actionsType.LOAD_DOWN_BOARD,
-  id,
-});
+// export const removeNPCFromBoard = (id) => ({
+//   type: actionsType.LOAD_DOWN_BOARD,
+//   id,
+// });
 
-export const addCharacter = (name) => ({
-  type: actionsType.ADD_CHARACTER,
-  name,
-});
+// export const addCharacter = (name, x, y) => ({
+//   type: actionsType.ADD_CHARACTER,
+//   name,
+//   x,
+//   y,
+// });
 
-export const removeCharacter = (name) => ({
-  type: actionsType.REMOVE_CHARACTER,
-  name,
-});
+// export const removeCharacter = (name, x, y) => ({
+//   type: actionsType.REMOVE_CHARACTER,
+//   name,
+//   x,
+//   y,
+// });

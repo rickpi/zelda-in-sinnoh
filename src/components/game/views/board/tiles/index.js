@@ -1,14 +1,18 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
+import Player from '../../player';
 
 const TileContent = ({ content }) => {
   let keyIndex = 0;
-
+  // console.log(content, content.length);
   return (
     content.map((item) => {
       keyIndex += 1;
+      // console.log(item);
       switch (item) {
-        // case 'main-character':
-        //   return <MainCharacter key={`content-${keyIndex}`} />;
+        case 'player':
+          return <Player key={`content-${keyIndex}`} />;
         // case 'npc-crehelf':
         //   return <Crehelf key={`content-${keyIndex}`} />;
         default:
@@ -24,13 +28,14 @@ const Tile = ({ base, content }) => (
   </div>
 );
 
-const Tiles = ({ tiles }) => {
+const Tiles = ({ board }) => {
+  const { tiles } = board;
   const rows = [];
   let tmpRow = [];
 
   tiles.forEach((tile) => {
     tmpRow.push(tile);
-    if (tile.posX === 14) {
+    if (tile.x === 14) {
       rows.push(tmpRow);
       tmpRow = [];
     }
@@ -38,15 +43,15 @@ const Tiles = ({ tiles }) => {
   return (
     <div className="tileset__container">
       {rows.map((row) => (
-        <div className="tileset__row" key={row[0].posY}>
+        <div className="tileset__row" key={row[0].y}>
           {row.map((tile) => {
-            const index = tile.posY * 15 + tile.posX;
+            const index = tile.y * 15 + tile.x;
             return (
               <Tile
                 index={index}
                 base={tile.base}
                 content={tile.content}
-                key={`${tile.posX}-${tile.posY}`}
+                key={`${tile.x}-${tile.y}`}
               />
             );
           })}
@@ -56,4 +61,8 @@ const Tiles = ({ tiles }) => {
   );
 };
 
-export default Tiles;
+const mapToProps = (state) => ({
+  board: state.tiles,
+});
+
+export default connect(mapToProps)(Tiles);

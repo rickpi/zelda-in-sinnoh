@@ -28,7 +28,7 @@ class Menu extends React.Component {
   }
 
   render() {
-    const { playerName, character, board } = this.props;
+    const { playerName, character, boards } = this.props;
 
     return (
       <div className="board">
@@ -54,7 +54,7 @@ class Menu extends React.Component {
           type="button"
           onClick={() => {
             store.dispatch(gameActions.startLoading());
-            store.dispatch(boardActions.loadBoard(board));
+            store.dispatch(boardActions.loadBoard(boards));
             store.dispatch(gameActions.init());
           }}
         >
@@ -68,7 +68,7 @@ class Menu extends React.Component {
 const mapToProps = (state) => ({
   playerName: state.player.playerName,
   character: state.player.character,
-  board: state.game.levels[state.game.level],
+  boards: state.game.levels[state.game.level],
 });
 
 export default connect(mapToProps)(Menu);

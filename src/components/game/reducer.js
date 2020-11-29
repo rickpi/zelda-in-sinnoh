@@ -2,6 +2,7 @@ import { actionsType } from './actions';
 
 import level1 from '../../assets/data/levels/level1';
 
+// prod state
 // const initialState = {
 //   isInit: false,
 //   isLoading: false,
@@ -10,7 +11,8 @@ import level1 from '../../assets/data/levels/level1';
 //     ...level1,
 //   }],
 // };
-// dev mode
+
+// dev state
 const initialState = {
   isInit: true,
   isLoading: false,

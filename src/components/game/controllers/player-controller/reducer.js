@@ -6,7 +6,7 @@ const initialState = {
   evolutionStep: 0,
   pos: {
     x: 3,
-    y: 6,
+    y: 5,
   },
   isMoving: false,
 };
@@ -46,7 +46,7 @@ const stopPlayerMoving = (state) => ({
   isMoving: false,
 });
 
-const player = (state = initialState, action) => {
+const playerController = (state = initialState, action) => {
   switch (action.type) {
     case actionsType.SET_PLAYER_NAME:
       return setPlayerName(state, action);
@@ -65,4 +65,4 @@ const player = (state = initialState, action) => {
   }
 };
 
-export default player;
+export default playerController;
