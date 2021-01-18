@@ -2,12 +2,21 @@ import * as actionTypes from '../../../assets/contants/actionTypes';
 
 const initialState = {
   frame: 0,
-  top: '',
-  right: '',
-  bottom: '',
-  left: '',
   npc: [],
   tiles: [],
+};
+
+const handleSetScreen = (state, { tiles }) => {
+  const viewTiles = tiles.map(({ base, content }, index) => ({
+    base,
+    content,
+    id: `tile-${index}`,
+  }));
+
+  return {
+    ...state,
+    tiles: viewTiles,
+  };
 };
 
 const handleNextFrame = (state) => {
@@ -23,10 +32,7 @@ const handleNextFrame = (state) => {
 const screenReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.SET_SCREEN:
-      return {
-        ...state,
-        ...action.payload.screen,
-      };
+      return handleSetScreen(state, action.payload.screen);
     case actionTypes.NEXT_FRAME:
       return handleNextFrame(state);
     default:
