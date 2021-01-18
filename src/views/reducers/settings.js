@@ -33,7 +33,7 @@ const handleUpdateScreen = (state, { nextScreen }) => ({
   screen: nextScreen,
 });
 
-const settingsReducer = (state = initialState, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.SET_PLAYER_NAME:
       return {
@@ -60,5 +60,3 @@ const settingsReducer = (state = initialState, action) => {
       return state;
   }
 };
-
-export default settingsReducer;

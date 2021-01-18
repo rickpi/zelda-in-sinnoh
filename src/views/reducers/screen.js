@@ -29,7 +29,7 @@ const handleNextFrame = (state) => {
   };
 };
 
-const screenReducer = (state = initialState, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.SET_SCREEN:
       return handleSetScreen(state, action.payload.screen);
@@ -39,5 +39,3 @@ const screenReducer = (state = initialState, action) => {
       return state;
   }
 };
-
-export default screenReducer;

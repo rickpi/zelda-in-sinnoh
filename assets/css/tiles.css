@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(15, 40px); /* 13 rows */
   overflow: hidden;
+  position: relative;
 }
 
 .tile {
