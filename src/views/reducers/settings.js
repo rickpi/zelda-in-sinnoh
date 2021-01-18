@@ -6,10 +6,11 @@ const initialState = {
   evolutionStep: 0,
   setUp: false,
   isLoading: false,
+  level: 1,
+  screen: 0,
 };
 
 const handleLoading = (state) => {
-  console.log(state);
   const { isLoading } = state;
 
   return {
@@ -17,6 +18,20 @@ const handleLoading = (state) => {
     isLoading: !isLoading,
   };
 };
+
+const handleNextLevel = (state) => {
+  const { level } = state;
+
+  return {
+    ...state,
+    level: level + 1,
+  };
+};
+
+const handleUpdateScreen = (state, { nextScreen }) => ({
+  ...state,
+  screen: nextScreen,
+});
 
 const settingsReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -37,6 +52,10 @@ const settingsReducer = (state = initialState, action) => {
       };
     case actionTypes.LOADING:
       return handleLoading(state);
+    case actionTypes.NEXT_LEVEL:
+      return handleNextLevel(state);
+    case actionTypes.UPDATE_SCREEN:
+      return handleUpdateScreen(state, action.payload);
     default:
       return state;
   }
