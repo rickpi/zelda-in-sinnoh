@@ -4,3 +4,6 @@ export const SET_UP_DONE = 'SET_UP_DONE';
 export const LOADING = 'LOADING';
 export const NEXT_LEVEL = 'NEXT_LEVEL';
 export const UPDATE_SCREEN = 'UPDATE_SCREEN';
+
+export const SET_SCREEN = 'SET_SCREEN';
+export const NEXT_FRAME = 'NEXT_FRAME';
