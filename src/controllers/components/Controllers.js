@@ -1,11 +1,12 @@
 import React from 'react';
 
-import PlayerController from './PlayerController';
+// import PlayerController from './PlayerController';
 // import NPCController from './npc-controller';
+import KeyInputController from './KeyInputController';
 
 const Controllers = () => (
   <>
-    <PlayerController />
+    <KeyInputController />
     {/* <NPCController /> */}
   </>
 );

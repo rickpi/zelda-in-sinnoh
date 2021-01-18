@@ -1,6 +1,7 @@
 import * as actionTypes from '../../assets/contants/actionTypes';
 import * as settingsActions from '../views/actions/settings';
 import * as screenActions from '../views/actions/screen';
+import * as screenControllerActions from '../controllers/actions/screenController';
 import * as playerActions from '../views/actions/player';
 
 import level1 from '../../assets/data/levels/level1';
@@ -17,6 +18,7 @@ const loadScreenData = ({ settings }, dispatch) => new Promise((resolve) => {
   const newScreen = JSON.parse(localStorage.getItem(`level${level}_${screen}`));
 
   dispatch(screenActions.setScreen(newScreen));
+  dispatch(screenControllerActions.setScreenController(newScreen));
   resolve();
 });
 
