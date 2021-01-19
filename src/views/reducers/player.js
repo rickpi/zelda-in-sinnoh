@@ -1,10 +1,11 @@
 import * as actionTypes from '../../../assets/contants/actionTypes';
 
 const initialState = {
-  orientation: 'down',
+  orientation: 'right',
   x: 3,
   y: 5,
   character: 'tortipouss',
+  isMoving: false,
 };
 
 const handleSetPlayerCharacter = (state, { character, evolutionStep }) => {
@@ -67,6 +68,15 @@ const handleSetPlayerCharacter = (state, { character, evolutionStep }) => {
   };
 };
 
+const handleSetPlayerMoving = (state) => {
+  const { isMoving } = state;
+
+  return {
+    ...state,
+    isMoving: !isMoving,
+  };
+};
+
 export default (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.SET_PLAYER_ORIENTATION:
@@ -76,6 +86,14 @@ export default (state = initialState, action) => {
       };
     case actionTypes.SET_PLAYER_CHARACTER_NAME:
       return handleSetPlayerCharacter(state, action.payload);
+    case actionTypes.SET_PLAYER_MOVING:
+      return handleSetPlayerMoving(state);
+    case actionTypes.SET_PLAYER_POSITION:
+      return {
+        ...state,
+        x: action.payload.x,
+        y: action.payload.y,
+      };
     default:
       return state;
   }

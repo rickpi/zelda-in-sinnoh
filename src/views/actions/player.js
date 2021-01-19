@@ -14,3 +14,15 @@ export const setPlayerCharacter = (character, evolutionStep) => ({
     evolutionStep,
   },
 });
+
+export const playerIsMoving = () => ({
+  type: actionTypes.SET_PLAYER_MOVING,
+});
+
+export const setPlayerPosition = (x, y) => ({
+  type: actionTypes.SET_PLAYER_POSITION,
+  payload: {
+    x,
+    y,
+  },
+});

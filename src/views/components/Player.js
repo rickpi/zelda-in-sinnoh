@@ -6,16 +6,23 @@ const Player = ({
   x,
   y,
   character,
+  isMoving,
   frame,
 }) => {
   const position = {
     top: `${y * 40 - 24}px`,
     left: `${x * 40 - 12}px`,
   };
+  const classNameBulk = [
+    'character',
+    `${character}-${orientation}-${frame}`,
+  ];
+
+  if (isMoving) classNameBulk.push(`moving-${orientation}`);
 
   return (
     <div
-      className={`character ${character}-${orientation}-${frame}`}
+      className={classNameBulk.join(' ')}
       style={position}
     />
   );
@@ -26,6 +33,7 @@ const mapToProps = (state, { frame }) => ({
   x: state.player.x,
   y: state.player.y,
   character: state.player.character,
+  isMoving: state.player.isMoving,
   // actions: state.player.actions,
   frame,
 });
