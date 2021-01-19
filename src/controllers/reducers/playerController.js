@@ -1,8 +1,8 @@
 import * as actionTypes from '../../../assets/contants/actionTypes';
 
 const initialState = {
-  x: 3,
-  y: 5,
+  x: 13,
+  y: 3,
 };
 
 export default (state = initialState, action) => {

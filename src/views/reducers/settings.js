@@ -28,9 +28,9 @@ const handleNextLevel = (state) => {
   };
 };
 
-const handleUpdateScreen = (state, { nextScreen }) => ({
+const handleUpdateScreen = (state, { newScreen }) => ({
   ...state,
-  screen: nextScreen,
+  screen: newScreen,
 });
 
 export default (state = initialState, action) => {

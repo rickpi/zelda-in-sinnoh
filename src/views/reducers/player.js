@@ -2,8 +2,8 @@ import * as actionTypes from '../../../assets/contants/actionTypes';
 
 const initialState = {
   orientation: 'right',
-  x: 3,
-  y: 5,
+  x: 13,
+  y: 3,
   character: 'tortipouss',
   isMoving: false,
 };

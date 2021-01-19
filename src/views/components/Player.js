@@ -6,7 +6,6 @@ const Player = ({
   x,
   y,
   character,
-  isMoving,
   frame,
 }) => {
   const position = {
@@ -18,7 +17,7 @@ const Player = ({
     `${character}-${orientation}-${frame}`,
   ];
 
-  if (isMoving) classNameBulk.push(`moving-${orientation}`);
+  // if (isMoving) classNameBulk.push(`moving-${orientation}`);
 
   return (
     <div
