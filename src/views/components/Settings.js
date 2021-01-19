@@ -6,7 +6,7 @@ import * as settingsActions from '../actions/settings';
 
 const startingCharacters = [
   'tortipouss',
-  'ousticram',
+  'ouisticram',
   'tiplouf',
 ];
 
@@ -15,38 +15,53 @@ const Settings = ({ playerName, character }) => {
     store.dispatch(settingsActions.setPlayerName(event.target.value));
   };
 
-  const handleChangeRadio = (event) => {
-    store.dispatch(settingsActions.setPlayerCharacter(parseInt(event.target.value, 10)));
+  const handleClickOnHero = (chosenCharacter) => {
+    store.dispatch(settingsActions.setPlayerCharacter(chosenCharacter));
   };
 
   return (
-    <div className="board">
-      <input value={playerName} onChange={handleChangeInput} />
-      <br />
-      {startingCharacters.map((name, index) => {
-        const checked = index === character;
-        return (
-          <div key={name}>
-            <input
-              type="radio"
-              id={name}
-              name="startingCharacter"
-              value={index}
-              checked={checked}
-              onChange={handleChangeRadio}
-            />
-            <label htmlFor={name}>{name}</label>
-          </div>
-        );
-      })}
-      <button
-        type="button"
-        onClick={() => {
-          store.dispatch(settingsActions.setUpDone());
-        }}
-      >
-        {'Commencer l\'aventure'}
-      </button>
+    <div className="settings">
+      <div className="settings__body">
+        <h1 className="settings__head">Zelda in Sinnoh</h1>
+        <h3 className="settings__title">Entrez votre nom</h3>
+        <div className="settings__name-block">
+          <input
+            value={playerName}
+            onChange={handleChangeInput}
+            className="settings__name-block__input"
+          />
+        </div>
+        <h3 className="settings__title">Choisissez votre héros</h3>
+        <div className="settings__hero-block">
+          {startingCharacters.map((name, index) => {
+            const checked = index === character;
+            const classNameChecked = checked
+              ? 'settings__hero-block__img--checked'
+              : '';
+            return (
+              <div
+                key={name}
+                className={`settings__hero-block__img ${classNameChecked}`}
+                onClick={() => handleClickOnHero(index)}
+              >
+                <img
+                  src={`../../assets/img/settings-${name}.png`}
+                  alt={name}
+                />
+              </div>
+            );
+          })}
+        </div>
+        <button
+          type="button"
+          onClick={() => {
+            store.dispatch(settingsActions.setUpDone());
+          }}
+          className="settings__start-button"
+        >
+          {'Commencer l\'aventure'}
+        </button>
+      </div>
     </div>
   );
 };
