@@ -1,0 +1,111 @@
+.pingoleon-down-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') 0 0 no-repeat;
+} 
+
+.pingoleon-down-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -64px 0 no-repeat;
+}
+
+.pingoleon-down-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -128px 0 no-repeat;
+}
+
+.pingoleon-down-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -192px 0 no-repeat;
+}
+
+.pingoleon-left-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') 0 -64px no-repeat;
+} 
+
+.pingoleon-left-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -64px -64px no-repeat;
+}
+
+.pingoleon-left-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -128px -64px no-repeat;
+}
+
+.pingoleon-left-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -192px -64px no-repeat;
+}
+
+.pingoleon-right-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') 0 -128px no-repeat;
+} 
+
+.pingoleon-right-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -64px -128px no-repeat;
+}
+
+.pingoleon-right-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -128px -128px no-repeat;
+}
+
+.pingoleon-right-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -192px -128px no-repeat;
+}
+
+.pingoleon-up-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') 0 -192px no-repeat;
+} 
+
+.pingoleon-up-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -64px -192px no-repeat;
+}
+
+.pingoleon-up-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -128px -192px no-repeat;
+}
+
+.pingoleon-up-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/pingoleon.png') -192px -192px no-repeat;
+}

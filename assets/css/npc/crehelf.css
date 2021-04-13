@@ -1,0 +1,140 @@
+.crehelf-front-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') 0 0 no-repeat;
+  z-index: 50 !important;
+} 
+
+.crehelf-front-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -64px 0 no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-front-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -128px 0 no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-front-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -192px 0 no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-left-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') 0 -64px no-repeat;
+  z-index: 50 !important;
+} 
+
+.crehelf-left-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -64px -64px no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-left-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -128px -64px no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-left-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -192px -64px no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-right-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') 0 -128px no-repeat;
+  z-index: 50 !important;
+} 
+
+.crehelf-right-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -64px -128px no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-right-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -128px -128px no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-right-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -192px -128px no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-back-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') 0 -192px no-repeat;
+  z-index: 50 !important;
+} 
+
+.crehelf-back-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -64px -192px no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-back-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -128px -192px no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-back-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/npc/crehelf.png') -192px -192px no-repeat;
+  z-index: 50 !important;
+}
+
+.crehelf-cinematic-0 {
+  animation: firstCinematic 2000ms linear forwards;
+}
+
+@keyframes firstCinematic {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(160px);
+  }
+}

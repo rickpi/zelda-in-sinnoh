@@ -1,0 +1,111 @@
+.chimpenfeu-down-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') 0 0 no-repeat;
+} 
+
+.chimpenfeu-down-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -64px 0 no-repeat;
+}
+
+.chimpenfeu-down-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -128px 0 no-repeat;
+}
+
+.chimpenfeu-down-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -192px 0 no-repeat;
+}
+
+.chimpenfeu-left-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') 0 -64px no-repeat;
+} 
+
+.chimpenfeu-left-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -64px -64px no-repeat;
+}
+
+.chimpenfeu-left-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -128px -64px no-repeat;
+}
+
+.chimpenfeu-left-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -192px -64px no-repeat;
+}
+
+.chimpenfeu-right-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') 0 -128px no-repeat;
+} 
+
+.chimpenfeu-right-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -64px -128px no-repeat;
+}
+
+.chimpenfeu-right-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -128px -128px no-repeat;
+}
+
+.chimpenfeu-right-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -192px -128px no-repeat;
+}
+
+.chimpenfeu-up-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') 0 -192px no-repeat;
+} 
+
+.chimpenfeu-up-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -64px -192px no-repeat;
+}
+
+.chimpenfeu-up-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -128px -192px no-repeat;
+}
+
+.chimpenfeu-up-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/chimpenfeu.png') -192px -192px no-repeat;
+}

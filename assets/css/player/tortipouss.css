@@ -1,0 +1,111 @@
+.tortipouss-down-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') 0 0 no-repeat;
+} 
+
+.tortipouss-down-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -64px 0 no-repeat;
+}
+
+.tortipouss-down-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -128px 0 no-repeat;
+}
+
+.tortipouss-down-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -192px 0 no-repeat;
+}
+
+.tortipouss-left-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') 0 -64px no-repeat;
+} 
+
+.tortipouss-left-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -64px -64px no-repeat;
+}
+
+.tortipouss-left-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -128px -64px no-repeat;
+}
+
+.tortipouss-left-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -192px -64px no-repeat;
+}
+
+.tortipouss-right-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') 0 -128px no-repeat;
+} 
+
+.tortipouss-right-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -64px -128px no-repeat;
+}
+
+.tortipouss-right-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -128px -128px no-repeat;
+}
+
+.tortipouss-right-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -192px -128px no-repeat;
+}
+
+.tortipouss-up-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') 0 -192px no-repeat;
+} 
+
+.tortipouss-up-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -64px -192px no-repeat;
+}
+
+.tortipouss-up-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -128px -192px no-repeat;
+}
+
+.tortipouss-up-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tortipouss.png') -192px -192px no-repeat;
+}

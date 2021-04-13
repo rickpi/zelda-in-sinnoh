@@ -1,0 +1,111 @@
+.boskara-down-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') 0 0 no-repeat;
+} 
+
+.boskara-down-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -64px 0 no-repeat;
+}
+
+.boskara-down-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -128px 0 no-repeat;
+}
+
+.boskara-down-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -192px 0 no-repeat;
+}
+
+.boskara-left-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') 0 -64px no-repeat;
+} 
+
+.boskara-left-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -64px -64px no-repeat;
+}
+
+.boskara-left-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -128px -64px no-repeat;
+}
+
+.boskara-left-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -192px -64px no-repeat;
+}
+
+.boskara-right-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') 0 -128px no-repeat;
+} 
+
+.boskara-right-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -64px -128px no-repeat;
+}
+
+.boskara-right-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -128px -128px no-repeat;
+}
+
+.boskara-right-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -192px -128px no-repeat;
+}
+
+.boskara-up-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') 0 -192px no-repeat;
+} 
+
+.boskara-up-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -64px -192px no-repeat;
+}
+
+.boskara-up-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -128px -192px no-repeat;
+}
+
+.boskara-up-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/boskara.png') -192px -192px no-repeat;
+}

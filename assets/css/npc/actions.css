@@ -1,0 +1,48 @@
+
+.npc-talking {
+  position: absolute;
+  color: #FFF;
+  padding: 5px 20px;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 200;
+  top: 0;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: .25em;
+}
+
+.npc-talking__wrap {
+  position: relative;
+}
+
+.npc-talking__text {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  text-align: center;
+  width: 0%;
+  animation: typing 2s steps(40, end) forwards;
+  letter-spacing: .1em;
+}
+
+.npc-talking__arrow {
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background-color: transparent;
+  width: .6em;
+  height: .3em;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate3d(50%, -100%, 0);
+  animation: blink-arrow 1s step-end infinite 2s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-arrow {
+  from, to { background-color: transparent }
+  50% {  background-color: #FFF; }
+}
