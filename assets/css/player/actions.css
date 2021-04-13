@@ -1,0 +1,49 @@
+.moving-up {
+  animation: movingUp 200ms linear forwards;
+}
+
+@keyframes movingUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-40px);
+  }
+}
+
+.moving-down {
+  animation: movingDown 200ms linear forwards;
+}
+
+@keyframes movingDown {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateY(40px);
+  }
+}
+.moving-left {
+  animation: movingLeft 200ms linear forwards;
+}
+
+@keyframes movingLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40px);
+  }
+}
+.moving-right {
+  animation: movingRight 200ms linear forwards;
+}
+
+@keyframes movingRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(40px);
+  }
+}

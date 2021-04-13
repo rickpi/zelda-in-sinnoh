@@ -1,0 +1,111 @@
+.tiplouf-down-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') 0 0 no-repeat;
+} 
+
+.tiplouf-down-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -64px 0 no-repeat;
+}
+
+.tiplouf-down-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -128px 0 no-repeat;
+}
+
+.tiplouf-down-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -192px 0 no-repeat;
+}
+
+.tiplouf-left-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') 0 -64px no-repeat;
+} 
+
+.tiplouf-left-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -64px -64px no-repeat;
+}
+
+.tiplouf-left-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -128px -64px no-repeat;
+}
+
+.tiplouf-left-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -192px -64px no-repeat;
+}
+
+.tiplouf-right-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') 0 -128px no-repeat;
+} 
+
+.tiplouf-right-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -64px -128px no-repeat;
+}
+
+.tiplouf-right-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -128px -128px no-repeat;
+}
+
+.tiplouf-right-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -192px -128px no-repeat;
+}
+
+.tiplouf-up-0 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') 0 -192px no-repeat;
+} 
+
+.tiplouf-up-1 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -64px -192px no-repeat;
+}
+
+.tiplouf-up-2 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -128px -192px no-repeat;
+}
+
+.tiplouf-up-3 {
+  width: 64px;
+  height: 64px;
+  left: -12px;
+  background: url('../../sprites/player/tiplouf.png') -192px -192px no-repeat;
+}
